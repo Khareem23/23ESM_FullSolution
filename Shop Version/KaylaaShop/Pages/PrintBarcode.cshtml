@@ -1,0 +1,215 @@
+﻿@page
+@model KaylaaShop.PrintBarcodeModel
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+@{
+    ViewData["Title"] = "Print Barcode";
+    Layout = "~/Pages/Shared/_LayoutMain.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-xl-12">
+
+        <div class="kt-portlet kt-portlet--mobile">
+            <div class="kt-portlet__head kt-portlet__head--lg deepBlueBack">
+                <div class="kt-portlet__head-label">
+                    <span class="kt-portlet__head-icon">
+                        <i class="flaticon-calendar"></i>
+                    </span>
+                    <h2 class="kt-portlet__head-title kt-font-primary whiteFont">
+                        Print Products Barcode
+                        @if (Model.ProductList != null)
+                        {
+                        <button class="ml-3 btn purpleback">  @Model.totalProduct </button>
+                        }
+                        <span> Product Records </span>
+                    </h2>
+                </div>
+
+                <div class="kt-portlet__head-toolbar">
+
+                    <form method="post" class="form-inline">
+                        <div class="form-check mr-3">
+                            <input asp-for="@Model.showUnprintedOnly"  type="checkbox" class="form-check-input">
+                            <label  class="form-check-label" for="exampleCheck1"> Show Unprinted Only</label>
+                        </div>
+                        <select asp-for="shopId" asp-items="Model.allShops" style="padding:10px;" class="purpleback mr-2"></select>
+                        <button type="submit" asp-page="PrintBarcode" asp-page-handler="ShopBarcodes" class="btn  purpleback"> View All </button>
+
+                    </form>
+                </div>
+
+
+            </div>
+
+            <div class="kt-portlet__body">
+                <input id="serverUrl" type="hidden" value="@Configuration.GetSection("ServerRoot")["HostUrl"]" />
+                <form method="post">
+
+
+                    <div class="row">
+                        <div class="">
+                            <input asp-for="searchKey" type="text" placeholder="Enter Search Keyword" />
+                           
+                            <button asp-page="PrintBarcode"  asp-page-handler="FindProductByKeyword" type="submit" class="btn  purpleback"> Find Product </button>
+                        </div>
+                    </div>
+                </form>
+                <table class="table" id="allProductsBarcode">
+                    <thead>
+                        <tr>
+                            <th> Id </th>
+                            <th> Name</th>
+                            <th> Code </th>
+                            <th> Product Image</th>
+                            <th> Product Barcode</th>
+                            <th> Action </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                       
+
+                        @if(Model.ProductList != null)
+                        {
+                            @foreach (var prod in Model.ProductList)
+                            {
+                                <tr>
+                                    <td class="nr">@prod.Id</td>
+                                    <td>@prod.Name</td>
+                                    <td>@prod.prodCode</td>
+                                    <td>
+                                        <img src="@prod.productImageUrl" width="150" height="100" />
+                                    </td>
+                                    <td>
+                                        <div id="sectionToPrint-@prod.Id" class="sheet" style="padding-left:5px;padding-right:7px;padding-top:3px;">
+                                           
+                                            <img id="barcodeImage" src="@prod.productBarcodeUrl" width="@Configuration.GetSection("ProjectSettings")["BarcodeWidth"]" height="@Configuration.GetSection("ProjectSettings")["BarcodeHeight"]" margin="1" barcodeformat="CODE_128" outputformat="0" />
+                                            <span class="text-center" style="margin-left:30px;" id="barcodePrice"> Price: ₦ @string.Format("{0:N0}", @prod.NormalSellingPrice) </span>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <button type="button" id="btnPrintBarcode" class="btn purpleback mt-4 btn-block" onclick="PrintBarcode(@prod.Id)">
+                                            Print Barcode
+                                        </button>
+                                        <input id="toPrintContent" type="hidden" value="@prod.Id" />
+                                    </td>
+
+                                </tr>
+
+
+
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td>
+                                    <div class="alert alert-danger">
+
+                                        <p> <strong>  @ViewData["status"]</strong> </p>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                        } 
+                        
+
+                    </tbody>
+                </table>
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+
+                        @{
+                            if (Model.ProductList != null)
+                            {
+                                var prevDisabled = !Model.ProductList.HasPreviousPage ? "disabled" : "";
+                                var nextDisabled = !Model.ProductList.HasNextPage ? "disabled" : "";
+
+                                <a asp-page="./PrintBarcode"
+                                   asp-route-pageIndex="@(Model.ProductList.PageIndex - 1)"
+                                   class="mr-4 btn btn-default  @prevDisabled">
+                                    Previous
+                                </a>
+                                <a asp-page="./PrintBarcode"
+                                   asp-route-pageIndex="@(Model.ProductList.PageIndex + 1)"
+                                   class="btn btn-default @nextDisabled">
+                                    Next
+                                </a>
+                            }
+
+
+
+                        }
+
+                    </div>
+
+                    <div class="col-lg-12">
+                        <p class="float-right">
+                            Total Products
+                            <a class="btn btn-default ml-4">
+                                @if(Model.ProductList != null){
+                                    @Model.totalProduct;
+                                }
+
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+{
+    <environment include="Development">
+
+    </environment>
+
+
+    <environment exclude="Development">
+
+    </environment>
+
+    <script>
+         var ServerRoot = $("#serverUrl").val();
+
+        $(document).ready(function () {
+             $(document).on('click', '#btnPrintBarcode', PrintBarcode);
+        })
+
+        var PrintBarcode = function (barcode) {
+
+          
+
+           // var $row = $(this).closest("tr");
+           // var $element = $row.find(".nr").text();
+
+            var $element =$(this).siblings("#toPrintContent").val();
+
+             printJS('sectionToPrint-'+$element, 'html');
+
+
+            $.ajax(`${ServerRoot}api/product/setprinted/${barcode}`, { method: "get" })
+                .then(function (data) {
+                    console.log("server response : ", data);
+                });
+
+        }
+
+        function FindWhatToPrint() {
+
+        }
+    </Script>
+       
+}

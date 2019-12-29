@@ -1,0 +1,56 @@
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.deps.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.csprojAssemblyReference.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfoInputs.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfo.cs
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.deps.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.csprojAssemblyReference.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfoInputs.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfo.cs
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Core\bin\Debug\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Core\obj\Debug\netcoreapp3.0\KaylaaShop.Core.pdb

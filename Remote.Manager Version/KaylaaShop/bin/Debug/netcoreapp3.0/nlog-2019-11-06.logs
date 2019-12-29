@@ -1,0 +1,28 @@
+2019-11-06 08:11:09.6610|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 08:11:17.6867|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 08:11:27.0981|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 08:11:29.9338|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 08:11:36.9308|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 19:58:52.2664|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 19:59:01.4843|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 19:59:08.5007|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 19:59:35.4950|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 20:12:56.4208|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnDisconnectedAsync' on hub.
+2019-11-06 20:12:57.6331|ERROR|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Failed disposing connection 0krrRaTvYajOIXxLLgA24w.
+2019-11-06 20:18:39.0949|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnDisconnectedAsync' on hub.
+2019-11-06 20:18:39.4724|ERROR|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Failed disposing connection Sn3AaSV2veaoxi8pBoTSzw.
+2019-11-06 20:41:07.2532|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnDisconnectedAsync' on hub.
+2019-11-06 20:41:08.1972|ERROR|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Failed disposing connection nbxtLtV39XuMs5JfhHoMhg.
+2019-11-06 20:42:54.1276|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnDisconnectedAsync' on hub.
+2019-11-06 20:42:55.2885|ERROR|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Failed disposing connection 3kehCMZ24289ZcOCBgWcng.
+2019-11-06 20:53:53.6715|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnDisconnectedAsync' on hub.
+2019-11-06 20:53:55.0263|ERROR|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Failed disposing connection gt-rmQwxSE0iq77Bk3yNNQ.
+2019-11-06 20:57:35.8350|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnDisconnectedAsync' on hub.
+2019-11-06 20:57:36.4010|ERROR|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Failed disposing connection RqsgIA3V8hZoPsbP-2MNNA.
+2019-11-06 21:00:01.6539|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnDisconnectedAsync' on hub.
+2019-11-06 21:00:03.3935|ERROR|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Failed disposing connection WY-075obZi0Td7acywT8vQ.
+2019-11-06 21:16:40.5263|ERROR|Microsoft.AspNetCore.SignalR.HubConnectionHandler|Error when dispatching 'OnDisconnectedAsync' on hub.
+2019-11-06 21:16:41.6465|ERROR|Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionManager|Failed disposing connection FxCTqvVWUybGZbjYt_FKUQ.
+2019-11-06 23:09:04.2859|ERROR|Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher|Failed to invoke hub method 'DoSync'.
+2019-11-06 23:17:53.5753|ERROR|Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher|Failed to invoke hub method 'DoSync'.
+2019-11-06 23:22:45.1792|ERROR|Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher|Failed to invoke hub method 'DoSync'.

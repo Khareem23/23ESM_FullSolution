@@ -1,0 +1,5 @@
+2019-11-10 12:58:03.3759|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-10 12:58:13.3516|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-10 12:58:15.7348|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-10 12:58:20.7790|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-10 12:58:33.6207|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.

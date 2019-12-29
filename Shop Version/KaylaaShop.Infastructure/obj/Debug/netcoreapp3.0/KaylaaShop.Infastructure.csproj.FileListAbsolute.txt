@@ -1,0 +1,48 @@
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence Project\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.deps.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.csprojAssemblyReference.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfoInputs.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfo.cs
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.deps.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.csprojAssemblyReference.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfoInputs.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfo.cs
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\23EShopDemo\Remote Version(2in1)\23ESM_FullSolution\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Infastructure\bin\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop.Infastructure\obj\Debug\netcoreapp3.0\KaylaaShop.Infastructure.pdb

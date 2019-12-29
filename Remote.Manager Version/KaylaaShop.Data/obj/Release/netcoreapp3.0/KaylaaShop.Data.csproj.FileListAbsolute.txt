@@ -1,0 +1,26 @@
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.csprojAssemblyReference.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.AssemblyInfoInputs.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.AssemblyInfo.cs
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.deps.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.runtimeconfig.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.runtimeconfig.dev.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Core.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.csproj.CopyComplete
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Remote.Manager Version\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.deps.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.runtimeconfig.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.runtimeconfig.dev.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Core.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.csprojAssemblyReference.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.AssemblyInfoInputs.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.AssemblyInfo.cs
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.csproj.CopyComplete
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\RemoteManagerVersion\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.pdb

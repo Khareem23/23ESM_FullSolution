@@ -1,0 +1,387 @@
+﻿@page
+@model KaylaaShop.Pages.AddProductsModel
+
+@using  KaylaaShop.Helpers
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+
+@{
+    ViewData["Title"] = "AddProducts";
+    Layout = "~/Pages/Shared/_LayoutMain.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="kt-portlet kt-portlet--mobile">
+            <div class="kt-portlet__head kt-portlet__head--lg deepBlueBack">
+                <div class="kt-portlet__head-label">
+                    <span class="kt-portlet__head-icon">
+                        <i class="flaticon-calendar"></i>
+                    </span>
+                    <h2 class="kt-portlet__head-title kt-font-primary mr-2 whiteFont">
+                        Inventory Management - Product Code <span> @Model.ProductCode </span>
+                    </h2>
+
+                </div>
+                <div class="kt-portlet__head-toolbar">
+                    <div class="kt-portlet__head-actions">
+
+                        <a id="show" href="#" class="btn purpleback btn-pill btn-sm s">
+                            <strong> Create Product </strong>
+                        </a>
+                        <a id="hide" href="#" class="btn purpleback btn-pill btn-sm">
+                            <strong>Display All Products </strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kt-portlet__body">
+
+                <form method="post" enctype="multipart/form-data">
+                    <div id="productdiv" class="row">
+
+                        <div class="col-md-12 mb-2">
+                            <label class="purplefont"> Paste Product Image Url/Link here to Upload  </label>
+                            <input asp-for="product.productImageUrl" type="text" class="form-control form-control-sm" placeholder="Paste Product Image Location">
+                            <hr/>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="kt-widget__media kt-hidden- imgborder">
+
+                                <div class="">
+                                    <div class="row">
+                                        <img id="product_img" class="product_img" src="~/assets/media/products/empty2.png" />
+                                        <input asp-for="ProductCode" value=" @Model.ProductCode" type="hidden">
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="custom-file">
+                                        <input asp-for="uploadFile" value="@ViewData["uploadFile"]" type="file" onChange="displayImage()" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label" for="customFile"> Browse Product Image</label>
+                                        <!--the buttons-->
+                                        <div class="row">
+                                            <div class="col-md-6 mt-2">
+                                                <button type="button" class="btn purpleback" data-toggle="modal" data-target="#modal_category"> Add New Category </button>
+                                            </div>
+                                            <div class="col-md-6 mt-2">
+                                                <button type="button" class="btn purpleback" data-toggle="modal" data-target="#modal_color"> Add New Colour </button>
+                                            </div>
+                                        </div>
+                              
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-8">
+
+                            <div class="kt-portlet">
+
+                                <div class="kt-portlet__body">
+                                    <div class="form-group row">
+                                        <input asp-for="product.Name" type="text" class="form-control col-md-4 mr-2 form-control-sm" placeholder="Product/ Brand Name">
+
+                                        <input asp-for="product.costPrice" type="text" class="form-control form-control-sm col-md-3 mr-2" placeholder="Cost Price">
+
+                                        <input asp-for="product.NormalSellingPrice"  class="form-control form-control-sm col-md-3 mr-2" onchange="displayPriceBarcode(this.value)" id="sellingPriceBarcode" type="text" placeholder="Selling (Asking Price)">
+
+                                     </div>
+
+                                    <div class="form-group row">
+                                        
+                                        <select asp-for="prodcategory" asp-items="Model.allCategories" class="form-control form-control-sm col-md-4 mr-2">
+                                            <option value="0" selected> Select Category  </option>
+                                        </select>
+                                       
+                                        <input asp-for="product.prodSize" type="text" class="form-control form-control-sm mr-2 col-md-3" placeholder="Size">
+                                        <input asp-for="product.quantityAvailable" type="text" class="form-control form-control-sm col-md-3 mr-2" placeholder="Quantity Available">
+
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                       
+                                       <input id="productColor" asp-for="prodcolor" type="text" class="form-control form-control-sm col-md-4 mr-2" placeholder="Type Color">
+
+                                        <select asp-for="product.salesDiscount" asp-items="Model.DiscountList" class="form-control form-control-sm col-md-3 mr-2" id="exampleSelect1">
+                                            <option value="0" selected> Select Discount </option>
+                                        </select>
+                                      
+                                        <select asp-for="prodshop" asp-items="Model.allShops" class="form-control form-control-sm col-md-3 mr-2" id="exampleSelect1">
+                                            <option value="0" selected> Select Shop </option>
+                                        </select>
+                                        
+
+                                    </div>
+                                      
+                                    
+
+                                  
+                               
+
+                                </div>
+
+                                <div class="kt-portlet__foot">
+                                    <div class="row align-items-center">
+                                        @if (@ViewData["msg"]?.ToString() != null)
+                                        {
+                                            <div id="result_status" class="alert alert-danger">
+                                                @ViewData["msg"]
+                                            </div>
+                                        }
+                                        <div class="col-lg-6">
+
+                                            <div id="barcodeDiv" class="sheet" style="padding-left:5px;padding-right:7px;padding-top:3px;">
+                                                <img id="barcodeImg" src="@ViewData["BarcodeImage"]" width="@Configuration.GetSection("ProjectSettings")["BarcodeWidth"]" height="@Configuration.GetSection("ProjectSettings")["BarcodeHeight"]" margin="2" barcodeformat="CODE_128" outputformat="0" />
+                                                <span id="barcodePrice" class="text-center" style="margin-left:30px;"> Price ₦ @ViewData["SellingPrice"] </span>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn purpleback mt-2 btn-block" onclick="printJS('barcodeDiv', 'html')">
+                                                    Print Barcode
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-6 kt-align-right">
+                                            <a href="~/addproducts" class="btn  purpleback">Continue Adding </a>
+                                            <button type="submit" class="btn purpleback"> Add Product </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <input id="serverUrl" type="hidden" value="@Configuration.GetSection("ServerRoot")["HostUrl"]" />
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+@*Begin Modal *@
+
+
+@*Modal Brand *@
+<div class="modal fade" id="modal_brand" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Product Brand</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="brandFrm" enctype="multipart/form-data">
+                    <input type="text" id="productBrandName" class="form-control" value="" aria-describedby="" placeholder="Enter Product Name">
+                    <input type="hidden" value="" id="brandId" />
+                    <input type="hidden" value="" id="idx" />
+                </form>
+
+            </div>
+            <div id="statusParent" style="display:none" class="alert alert-success my-alert" role="alert">
+                <div id="status" class="alert-text"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnCloseBrand" class="btn purpleback" data-dismiss="modal">Close</button>
+                <button id="btnSaveBrand" type="button" class="btn purpleback"> Save changes</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@*Modal Color *@
+<div class="modal fade" id="modal_color" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Product Color </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="brandFrm" enctype="multipart/form-data">
+                    <input type="text" id="productColorName" class="form-control" value="" aria-describedby="" placeholder="Enter Product Color">
+                    <input type="hidden" value="" id="colorId" />
+                    <input type="hidden" value="" id="idx_color" />
+                </form>
+
+            </div>
+            <div id="statusParent_Color" style="display:none" class="alert alert-success my-alert" role="alert">
+                <div id="status_Color" class="alert-text"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnClose_color" class="btn purpleback" data-dismiss="modal">Close</button>
+                <button id="btnSaveColor" type="button" class="btn purpleback"> Save changes </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@*Modal Country *@
+<div class="modal fade" id="modal_country" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Product Country </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="brandFrm" enctype="multipart/form-data">
+                    <input type="text" id="productcountryName" class="form-control" value="" aria-describedby="" placeholder="Enter Product Country">
+                    <input type="hidden" value="" id="countryId" />
+                    <input type="hidden" value="" id="idx_country" />
+                </form>
+
+            </div>
+            <div id="statusParent_country" style="display:none" class="alert alert-success my-alert" role="alert">
+                <div id="status_country" class="alert-text"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnClose_country" class="btn purpleback" data-dismiss="modal">Close</button>
+                <button id="btnSavecountry" type="button" class="btn purpleback"> Save changes </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@*Modal Category *@
+<div class="modal fade" id="modal_category" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Product Category </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="brandFrm" enctype="multipart/form-data">
+                    <input type="text" id="productCategoryName" class="form-control" value="" aria-describedby="" placeholder="Enter Product Category">
+                    <input type="hidden" value="" id="categoryId" />
+                    <input type="hidden" value="" id="idx_Category" />
+
+
+                    <input id="serverUrl" type="hidden" value="@Configuration.GetSection("ServerRoot")["HostUrl"]" />
+                </form>
+
+            </div>
+            <div id="statusParent_Category" style="display:none" class="alert alert-success my-alert" role="alert">
+                <div id="status_Category" class="alert-text"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnClose_category" class="btn purpleback" data-dismiss="modal">Close</button>
+                <button id="btnSaveCategory" type="button" class="btn purpleback"> Save changes </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@section Scripts
+{
+    <environment include="Development">
+        @*<script src="~/library/jquery/dist/jquery.min.js"></script>*@
+        <script src="~/library/datatables.net/js/jquery.dataTables.js"></script>
+        <script src="~/library/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+        <link href="~/library/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+        <script src="~/mylib/MyAutocomplete.js"></script>
+    </environment>
+
+    <environment exclude="Development">
+        @*<script src="~/library/jquery/dist/jquery.min.js"></script>*@
+        <script src="~/library/datatables.net/js/jquery.dataTables.js"></script>
+        <script src="~/library/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+        <link href="~/library/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+        <script src="~/mylib/MyAutocomplete.js"></script>
+    </environment>
+   
+    <script src="~/mylib/color.js"></script>
+    <script src="~/mylib/category.js"></script>
+    
+
+    <script>
+
+        var ServerRoot = $("#serverUrl").val();
+
+        var allColors = [];
+
+
+        function formatNumber(num) {
+            return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+        }
+
+
+        function displayPriceBarcode(val) {
+
+            $("#barcodePrice").html(formatNumber(val));
+            // var img = $('#barcodeImg').attr('src');
+        }
+
+
+        $(document).ready(function () {
+
+            $(document).on('click', '#btnPrintBarcode', printBarcode);
+            getAllColors();
+        })
+
+        var getAllColors = function () {
+            
+            $.ajax(ServerRoot + "api/color", { method: "get" })
+                .then(function (resp) {
+                    resp.forEach(data => {
+                        allColors.push(data.name);
+                    });
+                });
+
+            autocomplete(document.getElementById("productColor"), allColors);
+        }
+
+        var printBarcode = function () {
+            var img = $('#barcodeImg').attr('src');
+            printJS(img, 'image');
+        }
+
+
+        function displayImage() {
+
+
+            var selectedFile = document.getElementById('customFile').files[0];
+            var img = document.getElementById('product_img')
+
+            var reader = new FileReader();
+
+            reader.onload = function () {
+                img.src = this.result
+            }
+            reader.readAsDataURL(selectedFile);
+
+
+        }
+
+
+    </script>
+
+}

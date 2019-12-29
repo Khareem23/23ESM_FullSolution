@@ -1,0 +1,148 @@
+2019-12-28 15:33:35.0953|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5001
+2019-12-28 15:33:35.9051|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2019-12-28 15:33:36.1153|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2019-12-28 15:33:36.1678|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop
+2019-12-28 15:33:41.2170|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/  
+2019-12-28 15:33:42.8477|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Index'
+2019-12-28 15:33:43.7889|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+2019-12-28 15:33:46.0848|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.IndexModel.OnGet - ModelState is Valid
+2019-12-28 15:33:46.1892|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-12-28 15:33:46.2271|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-12-28 15:33:46.2560|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-12-28 15:33:46.9345|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Index in 2990.4879ms
+2019-12-28 15:33:46.9860|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Index'
+2019-12-28 15:33:47.2614|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 5887.2059ms 200 text/html; charset=utf-8
+2019-12-28 15:33:47.7255|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/vendors.bundle.css  
+2019-12-28 15:33:47.9576|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/style.bundle.css  
+2019-12-28 15:33:48.0423|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/header/menu/light.css  
+2019-12-28 15:33:48.1136|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/brand/dark.css  
+2019-12-28 15:33:48.2036|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/header/base/light.css  
+2019-12-28 15:33:48.2621|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/login-2.css  
+2019-12-28 15:33:48.5048|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/brand/dark.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\skins\brand\dark.css'
+2019-12-28 15:33:48.6924|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/header/base/light.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\skins\header\base\light.css'
+2019-12-28 15:33:49.0037|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/header/menu/light.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\skins\header\menu\light.css'
+2019-12-28 15:33:49.1542|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 829.3617ms 200 text/css
+2019-12-28 15:33:49.2522|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1477.2564ms 200 text/css
+2019-12-28 15:33:49.2950|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/aside/dark.css  
+2019-12-28 15:33:49.4171|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/login-2.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\login-2.css'
+2019-12-28 15:33:49.5245|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1419.8634ms 200 text/css
+2019-12-28 15:33:49.5441|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/customstyle.css  
+2019-12-28 15:33:49.5681|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1308.3549ms 200 text/css
+2019-12-28 15:33:49.5709|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/vendors.bundle.js  
+2019-12-28 15:33:49.8668|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/customstyle.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\customstyle.css'
+2019-12-28 15:33:49.8668|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/scripts.bundle.js  
+2019-12-28 15:33:49.9271|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 492.87190000000004ms 200 text/css
+2019-12-28 15:33:50.1846|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/aside/dark.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\skins\aside\dark.css'
+2019-12-28 15:33:50.5239|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1048.8289ms 200 text/css
+2019-12-28 15:33:50.7639|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/pages/login2-general.js  
+2019-12-28 15:33:50.8233|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/kareempng 3.png  
+2019-12-28 15:33:51.0042|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 241.2621ms 404 
+2019-12-28 15:33:51.0846|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/vendors.bundle.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\vendors\global\vendors.bundle.css'
+2019-12-28 15:33:51.5869|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/kareempng 3.png'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\kareempng 3.png'
+2019-12-28 15:33:51.7192|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/kareem png 2.png  
+2019-12-28 15:33:51.7571|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4340.7669000000005ms 200 text/css
+2019-12-28 15:33:51.8096|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1047.2989ms 200 image/png
+2019-12-28 15:33:52.0052|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/js/demo1/scripts.bundle.js'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\js\demo1\scripts.bundle.js'
+2019-12-28 15:33:52.0067|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/kareem png 2.png'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\kareem png 2.png'
+2019-12-28 15:33:52.0414|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2357.4212ms 200 application/javascript
+2019-12-28 15:33:52.1110|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 489.60810000000004ms 200 image/png
+2019-12-28 15:33:52.7455|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/style.bundle.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\style.bundle.css'
+2019-12-28 15:33:52.8944|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 5458.6045ms 200 text/css
+2019-12-28 15:33:53.8944|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/fonts/@fortawesome/fa-solid-900.woff2  
+2019-12-28 15:33:53.9791|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/vendors.bundle.js'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\vendors\global\vendors.bundle.js'
+2019-12-28 15:33:54.0241|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4450.8791ms 200 application/javascript
+2019-12-28 15:33:54.0638|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/fonts/@fortawesome/fa-solid-900.woff2'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\vendors\global\fonts\@fortawesome\fa-solid-900.woff2'
+2019-12-28 15:33:54.2218|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 377.1522ms 200 font/woff2
+2019-12-28 15:33:55.1103|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/pages/login2-general.js  
+2019-12-28 15:33:55.2752|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 762.3534000000001ms 404 
+2019-12-28 15:33:55.6602|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/logo2.png  
+2019-12-28 15:33:55.7105|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/logo2.png'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\logo2.png'
+2019-12-28 15:33:55.7399|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 99.5656ms 200 image/png
+2019-12-28 16:51:05.0011|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5001
+2019-12-28 16:51:06.4923|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2019-12-28 16:51:06.6976|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2019-12-28 16:51:09.2876|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop
+2019-12-28 16:51:10.3906|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/  
+2019-12-28 16:51:11.0621|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Index'
+2019-12-28 16:51:13.9608|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+2019-12-28 16:53:05.1383|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.IndexModel.OnGet - ModelState is Valid
+2019-12-28 16:53:22.7865|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-12-28 16:53:24.1055|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-12-28 16:53:24.1382|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-12-28 16:53:24.8105|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Index in 130626.6732ms
+2019-12-28 16:53:26.7521|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Index'
+2019-12-28 16:53:26.8689|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/pages/login2-general.js  
+2019-12-28 16:53:27.4464|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 662.0267ms 404 
+2019-12-28 16:53:27.4464|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 137043.5087ms 200 text/html; charset=utf-8
+2019-12-28 17:01:01.8744|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/  
+2019-12-28 17:01:02.5014|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Index'
+2019-12-28 17:01:02.8688|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+2019-12-28 17:01:07.4637|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.IndexModel.OnGet - ModelState is Valid
+2019-12-28 17:01:13.4564|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-12-28 17:01:13.5244|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-12-28 17:01:13.5985|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-12-28 17:01:15.3045|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Index in 8414.0142ms
+2019-12-28 17:01:15.4312|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Index'
+2019-12-28 17:01:15.6441|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 13610.7615ms 200 text/html; charset=utf-8
+2019-12-28 17:01:16.0711|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/vendors.bundle.css  
+2019-12-28 17:01:16.1254|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/header/base/light.css  
+2019-12-28 17:01:17.8437|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/header/menu/light.css  
+2019-12-28 17:01:18.5719|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/style.bundle.css  
+2019-12-28 17:01:18.8345|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/login-2.css  
+2019-12-28 17:01:20.4346|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/brand/dark.css  
+2019-12-28 17:01:20.9103|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/header/base/light.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\skins\header\base\light.css'
+2019-12-28 17:01:20.9867|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/header/menu/light.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\skins\header\menu\light.css'
+2019-12-28 17:01:21.0757|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/login-2.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\login-2.css'
+2019-12-28 17:01:21.5321|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4889.5735ms 200 text/css
+2019-12-28 17:01:21.6841|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4931.3544ms 200 text/css
+2019-12-28 17:01:21.8327|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2790.6653ms 200 text/css
+2019-12-28 17:01:21.9850|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/aside/dark.css  
+2019-12-28 17:01:22.2441|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/customstyle.css  
+2019-12-28 17:01:22.4437|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/brand/dark.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\skins\brand\dark.css'
+2019-12-28 17:01:22.5990|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2721.4480000000003ms 200 text/css
+2019-12-28 17:01:22.6243|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/customstyle.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\customstyle.css'
+2019-12-28 17:01:22.6816|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 967.2674000000001ms 200 text/css
+2019-12-28 17:01:22.7133|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/vendors.bundle.js  
+2019-12-28 17:01:22.7835|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/scripts.bundle.js  
+2019-12-28 17:02:37.7972|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/pages/login2-general.js  
+2019-12-28 17:02:38.9867|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1328.4827ms 404 
+2019-12-28 17:02:39.0829|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/aside/dark.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\skins\aside\dark.css'
+2019-12-28 17:02:39.2591|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 77468.05960000001ms 200 text/css
+2019-12-28 17:02:39.3190|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/vendors.bundle.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\vendors\global\vendors.bundle.css'
+2019-12-28 17:03:26.6573|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 83467.6955ms 200 text/css
+2019-12-28 17:03:27.9386|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/js/demo1/scripts.bundle.js'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\js\demo1\scripts.bundle.js'
+2019-12-28 17:03:28.0361|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 125291.27540000001ms 200 application/javascript
+2019-12-28 17:03:28.4777|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/style.bundle.css'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\css\demo1\style.bundle.css'
+2019-12-28 17:03:28.5257|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/kareem png 2.png  
+2019-12-28 17:03:28.5257|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 132453.074ms 200 text/css
+2019-12-28 17:03:28.6010|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/logo2.png  
+2019-12-28 17:03:28.6367|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/kareempng 3.png  
+2019-12-28 17:03:31.7516|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/logo2.png'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\logo2.png'
+2019-12-28 17:03:36.9142|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3198.6498ms 200 image/png
+2019-12-28 17:03:36.9429|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/kareempng 3.png'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\kareempng 3.png'
+2019-12-28 17:03:37.0580|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/fonts/@fortawesome/fa-solid-900.woff2  
+2019-12-28 17:03:37.0787|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/kareem png 2.png'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\kareem png 2.png'
+2019-12-28 17:03:37.0848|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 8403.7592ms 200 image/png
+2019-12-28 17:03:37.2341|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 8599.8266ms 200 image/png
+2019-12-28 17:03:37.2929|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/fonts/@fortawesome/fa-solid-900.woff2'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\vendors\global\fonts\@fortawesome\fa-solid-900.woff2'
+2019-12-28 17:03:37.3178|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 344.752ms 200 font/woff2
+2019-12-28 17:03:43.5998|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/vendors.bundle.js'. Physical path: 'C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop\wwwroot\assets\vendors\global\vendors.bundle.js'
+2019-12-28 17:03:43.7317|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 140981.6124ms 200 application/javascript
+2019-12-28 17:05:29.2692|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/pages/login2-general.js  
+2019-12-28 17:05:29.9603|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 283.291ms 404 
+2019-12-28 18:59:29.9222|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5001
+2019-12-28 18:59:30.3458|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2019-12-28 18:59:33.0951|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2019-12-28 18:59:33.6596|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\KaylaaShop
+2019-12-28 19:01:39.2555|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/  
+2019-12-28 19:01:40.2796|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Index'
+2019-12-28 19:01:40.8366|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+2019-12-28 19:01:46.4884|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.IndexModel.OnGet - ModelState is Valid
+2019-12-28 19:01:47.6985|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-12-28 19:01:47.7985|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-12-28 19:01:49.1079|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-12-28 19:01:49.6854|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Index in 8741.6033ms
+2019-12-28 19:01:51.6061|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Index'
+2019-12-28 19:01:51.7044|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/pages/login2-general.js  
+2019-12-28 19:01:52.0495|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 13774.0184ms 200 text/html; charset=utf-8
+2019-12-28 19:01:53.4294|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 797.3534000000001ms 404 

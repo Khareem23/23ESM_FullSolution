@@ -1,0 +1,136 @@
+﻿@page
+@model indexModel
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_LayoutBlank";
+}
+
+
+
+<!-- begin:: Page -->
+<div class="kt-grid kt-grid--ver kt-grid--root">
+    <div class="kt-grid kt-grid--hor kt-grid--root kt-login kt-login--v2 kt-login--signin" id="kt_login">
+        
+        <div id="myloginbody" class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" style="">
+
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-md-7">
+
+                        <img class="mb-2" height="50" width="70" src="~/kareempng 3.png" />
+                        <h1 class="pinkfont mt-2" style="color:#5d78ff"> <strong> @Configuration.GetSection("ProjectSettings")["BusinessName"]</strong> </h1>
+                        <h3 class="text-white">  Online Shop Manager  ( 23ESM Vs  1.0 ) </h3>
+                        <p class="text-white  text-justify" style="font-size:1.1rem;">
+                            This is an Online Based Shop management system that automates all
+                            activities in the shops from sales, orders etc. The Shop Manager can create accounts
+                            for staffs. The Staffs can process Transactions but are restricted access to some resources.
+
+
+                        </p>
+
+
+
+
+                        <div class="row">
+                            <div class="col-md-12  pinkfont " style="color:#5d78ff"> <h5>Features:</h5> </div>
+                            <div class="col-md-4">
+
+                                <ul class="list-group  text-white kt-font-bold">
+                                    <li class="">Barcode Generation & Printing </li>
+                                    <li class="">Product Management </li>
+                                    <li class="">Customer Management</li>
+                                    <li class="">Inventory Management </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+
+                                <ul class="list-group  text-white kt-font-bold">
+                                    <li class="">Receipt  Generation & Printing </li>
+                                    <li class="">Order Management </li>
+                                    <li class="">Staff Management </li>
+                                    <li class="">Sales  Management </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="list-group text-white kt-font-bold">
+                                    <li class="">Product Lookup with Barcode </li>
+                                    <li class="">Account & Profit Estimation (D,M,Y) </li>
+                                    <li class="">Multi-Shop Management </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-5">
+
+                        <div class="card align-middle ">
+                            <div class="card-header deepBlueBack whiteFont">
+                                <h5 class=""> Account Login Details </h5>
+                            </div>
+                            <div class="card-body p-4">
+
+                                <form class="kt-form" method="post" asp-page-handler="Login">
+                                    <div class="input-group mt-3">
+                                        <input asp-for="login.email" class="form-control loginInput input_no_border" type="text" placeholder="Email" autocomplete="off">
+                                        <span asp-validation-for="login.email" class="text-danger"></span>
+                                    </div>
+                                    <div class="input-group mt-3 mb-3">
+                                        <input asp-for="login.password" class="form-control loginInput input_no_border" type="password" placeholder="Password">
+                                        <span asp-validation-for="login.password" class="text-danger"></span>
+                                    </div>
+                                    <div class="row kt-login__extra">
+
+                                        <div class="col kt-align-right">
+                                            <div class="col">
+                                                <label class="kt-checkbox purplefont">
+                                                    <input type="checkbox" name="remember"> Remember me
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div asp-validation-summary="All" class="text-danger"></div>
+                                        <div>
+
+
+                                            @if (ViewData["status"] != null)
+                                            {
+                                                <p class="alert alert-primary">  ViewData["status"].ToString(); </p>
+                                            }
+                                        </div>
+                                    </div>
+                                    <div class="kt-login__actions">
+                                        <button type="submit" id="kt_login_signin_submit" class="btn purpleback loginbtn"><i class="fa fa-key"></i> Login  </button>
+                                    </div>
+
+
+                                </form>
+
+
+                            </div>
+                            <hr />
+                            <div class="row pb-4 mt-2">
+                                <div class="col-md-5 clearfix pl-5">
+                                    <img height="50" width="70" src="~/kareem png 2.png" alt="logo" />
+                                </div>
+                                <div class="col-md-6 clearfix mt-2 pl-0 pr-0">
+                                    <a class="btn deepBlueBack whiteFont float-right" target="_blank" href="http://23esm.decloud23.com"><i class="fa fa-question"></i> Lodge Complaint </a>
+                                </div>
+
+                            </div>
+                            <footer class="card-footer text-center deepBlueBack">ESM 1.0 Powered By <a class="whiteFont" href="https://decloud23.com"><b>Cloud23 Technologies </b></a></footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- end:: Page -->

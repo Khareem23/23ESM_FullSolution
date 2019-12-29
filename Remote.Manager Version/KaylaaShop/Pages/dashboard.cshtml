@@ -1,0 +1,451 @@
+﻿@page
+@model KaylaaShop.Pages.Kaylaa.dashboardModel
+@using Microsoft.Extensions.Configuration
+@using  KaylaaShop.Data
+@using  KaylaaShop.Core
+@inject IConfiguration Configuration
+@inject IKaylaaRepository<Product> ProdRepo
+@inject IKaylaaRepository<Customer> CustRepo
+@inject IKaylaaRepository<ShoppingCart> OrderRepo
+@inject IKaylaaRepository<staff> StaffRepo
+@inject IProductRepo  prodRepoPersonal
+@{
+    ViewData["Title"] = "dashboard";
+    Layout = "~/Pages/Shared/_LayoutMain.cshtml";
+}
+
+<div id="dashboard" class="row">
+    <div class="col-xl-12">
+        <!--begin:: Widgets/Activity-->
+        <div class="kt-portlet kt-portlet--fit kt-portlet--head-lg kt-portlet--head-overlay kt-portlet--skin-solid kt-portlet--height-fluid">
+            <div class="kt-portlet__head kt-portlet__head--noborder kt-portlet__space-x">
+                <div class="kt-portlet__head-label">
+                    <button id="btnSettings" type="button" class="btn btn-primary deepBlueBack btn-sm"> Manage Product Settings </button>
+                </div>
+                <div class="kt-portlet__head-toolbar">
+
+
+                    <a href="#" class="btn btn-label-light btn-sm btn-bold mr-5" data-toggle="dropdown">
+
+                        <span class="badge badge-light">  @prodRepoPersonal.GetNoItemsUnavailable() </span>
+                        Products Sold Out (Unavailable)
+                    </a>
+
+
+                    <form method="post">
+                        @if (User.IsInRole("AdminStaff"))
+                        {
+                            <button class="btn btn-primary deepBlueBack" type="submit" asp-page-handler="delete"> Delete Product </button>
+                        }
+
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="kt-portlet__body kt-portlet__body--fit">
+                <div class="kt-widget17 pb-4">
+                    <div class="kt-widget17__visual kt-widget17__visual--chart kt-portlet-fit--top kt-portlet-fit--sides deepBlueBack">
+                        <div class="kt-widget17__chart" style="height:320px;">
+                            <div id="kt_chart_activities2">
+                                <p class="text-center">  @ViewData["del_status"] </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kt-widget17__stats" style="margin-top:-180px;">
+                        <div class="kt-widget17__items">
+                            <div class="kt-widget17__item">
+                                <span class="kt-widget17__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--brand">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect id="bound" x="0" y="0" width="24" height="24" />
+                                            <path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" id="Combined-Shape" fill="#000000" />
+                                            <rect id="Rectangle-Copy-2" fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519) " x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="kt-widget17__subtitle">
+                                    Number of Products
+                                </span>
+                                <span class="kt-widget17__desc">
+                                    <h3 class="text-center"> @ProdRepo.Count()  </h3>
+                                </span>
+                                <span class="kt-widget17__desc mt-2">
+                                    <button type="button" class="btn btn-primary deepBlueBack float-right" data-toggle="modal" data-target="#modal_brand1"> Products </button>
+                                </span>
+                            </div>
+
+                            <div class="kt-widget17__item">
+                                <span class="kt-widget17__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--brand">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect id="bound" x="0" y="0" width="24" height="24" />
+                                            <path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" id="Combined-Shape" fill="#000000" />
+                                            <rect id="Rectangle-Copy-2" fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519) " x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="kt-widget17__subtitle">
+                                    Number of Orders
+                                </span>
+                                <span class="kt-widget17__desc">
+                                    <h3 class="text-center"> @OrderRepo.Count()  </h3>
+                                </span>
+                                <span class="kt-widget17__desc mt-2">
+                                    <button type="button" class="btn btn-primary deepBlueBack float-right" data-toggle="modal" data-target="#modal_category"> Add New Category </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="kt-widget17__items">
+                            <div class="kt-widget17__item">
+                                <span class="kt-widget17__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--brand">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect id="bound" x="0" y="0" width="24" height="24" />
+                                            <path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" id="Combined-Shape" fill="#000000" />
+                                            <rect id="Rectangle-Copy-2" fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519) " x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="kt-widget17__subtitle">
+                                    Number of Customers
+                                </span>
+                                <span class="kt-widget17__desc">
+                                    <h3 class="text-center"> @CustRepo.Count()  </h3>
+                                </span>
+                                <span class="kt-widget17__desc mt-2">
+                                    <button type="button" class="btn btn-primary deepBlueBack float-right" data-toggle="modal" data-target="#modal_country1"> Customers </button>
+                                </span>
+                            </div>
+
+                            <div class="kt-widget17__item">
+                                <span class="kt-widget17__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--brand">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect id="bound" x="0" y="0" width="24" height="24" />
+                                            <path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" id="Combined-Shape" fill="#000000" />
+                                            <rect id="Rectangle-Copy-2" fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519) " x="16.3255682" y="2.94551858" width="3" height="18" rx="1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="kt-widget17__subtitle">
+                                    Number of Staffs
+                                </span>
+                                <span class="kt-widget17__desc">
+                                    <h2 class="text-center"> @StaffRepo.Count()  </h2>
+                                </span>
+                                <span class="kt-widget17__desc mt-2">
+                                    <button id="" type="button" class="btn btn-primary deepBlueBack float-right" data-toggle="modal" data-target="#modal_color"> Add New Colour </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end:: Widgets/Activity-->
+    </div>
+</div>
+
+
+<div class="kt-portlet kt-portlet--mobile">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label">
+            <h3 class="kt-portlet__head-title">
+                <button id="btnDashboard" type="button" class="btn btn-primary btn-sm deepBlueBack"> <i class="fa fa-2x fa-arrow-left"></i> Go Back To Dashboard </button>
+            </h3>
+        </div>
+    </div>
+    <div class="kt-portlet__body">
+        <div id="divDisplayProductDependencies" class="row">
+            <div id="divProductBrand_Colr" class="col-lg-6">
+                <div class="kt-portlet kt-portlet--skin-solid kt-portlet-- kt-bg-brand deepBlueBack">
+                    <div class="kt-portlet__head">
+                        <div class="kt-portlet__head-label">
+                            <span class="kt-portlet__head-icon">
+                                <i id="colorSpinner" class="mr-4"></i>
+                            </span>
+                            <h3 class="kt-portlet__head-title">
+                                All Product Colors
+                            </h3>
+                        </div>
+                        <div class="kt-portlet__head-toolbar">
+                            <div class="kt-portlet__head-actions">
+                                <a href="#" class="btn btn-outline-light btn-pill btn-sm btn-icon btn-icon-md">
+                                    <i class="flaticon2-lock"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-light btn-pill btn-sm btn-icon btn-icon-md">
+                                    <i class="flaticon2-download-symbol"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-light btn-pill btn-sm btn-icon btn-icon-md">
+                                    <i class="flaticon2-rocket-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kt-portlet__body">
+                        <table id="colorTbl"></table>
+
+                    </div>
+                </div>
+            </div>
+            <div id="divProductCategories_Countries" class="col-lg-6">
+                <div class="kt-portlet kt-portlet--skin-solid kt-portlet-- kt-bg-brand deepBlueBack">
+                    <div class="kt-portlet__head">
+                        <div class="kt-portlet__head-label">
+                            <span class="kt-portlet__head-icon">
+                                <i id="CategorySpinner" class="mr-4"></i>
+                            </span>
+                            <h3 class="kt-portlet__head-title">
+                                All Product Categories
+                            </h3>
+                        </div>
+                        <div class="kt-portlet__head-toolbar">
+                            <div class="kt-portlet__head-actions">
+                                <a href="#" class="btn btn-outline-light btn-pill btn-sm btn-icon btn-icon-md">
+                                    <i class="flaticon2-lock"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-light btn-pill btn-sm btn-icon btn-icon-md">
+                                    <i class="flaticon2-download-symbol"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-light btn-pill btn-sm btn-icon btn-icon-md">
+                                    <i class="flaticon2-rocket-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kt-portlet__body">
+                        <table id="categoryTbl"></table>
+
+                    </div>
+                </div>
+
+
+                @*<div class="kt-portlet kt-portlet--skin-solid kt-portlet-- kt-bg-brand deepBlueBack">
+                    <div class="kt-portlet__head">
+                        <div class="kt-portlet__head-label">
+                            <span class="kt-portlet__head-icon">
+                                <i id="countrySpinner" class="mr-4"></i>
+                            </span>
+                            <h3 class="kt-portlet__head-title">
+                                All Product Countries
+                            </h3>
+                        </div>
+                        <div class="kt-portlet__head-toolbar">
+                            <div class="kt-portlet__head-actions">
+                                <a href="#" class="btn btn-outline-light btn-pill btn-sm btn-icon btn-icon-md">
+                                    <i class="flaticon2-lock"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-light btn-pill btn-sm btn-icon btn-icon-md">
+                                    <i class="flaticon2-download-symbol"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-light btn-pill btn-sm btn-icon btn-icon-md">
+                                    <i class="flaticon2-rocket-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kt-portlet__body">
+                        <table id="countryTbl"></table>
+
+                    </div>
+                </div>*@
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+@*Begin Modal*@
+
+
+@*Modal Brand *@
+<div class="modal fade" id="modal_brand" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Product Brand</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="brandFrm" enctype="multipart/form-data">
+                    <input type="text" id="productBrandName" class="form-control" value="" aria-describedby="" placeholder="Enter Product Name">
+                    <input type="hidden" value="" id="brandId" />
+                    <input type="hidden" value="" id="idx" />
+                </form>
+
+            </div>
+            <div id="statusParent" style="display:none" class="alert alert-success my-alert" role="alert">
+                <div id="status" class="alert-text"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnCloseBrand" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="btnSaveBrand" type="button" class="btn btn-primary"> Save changes</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@*Modal Color *@
+<div class="modal fade" id="modal_color" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Product Color </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="brandFrm" enctype="multipart/form-data">
+                    <input type="text" id="productColorName" class="form-control" value="" aria-describedby="" placeholder="Enter Product Color">
+                    <input type="hidden" value="" id="colorId" />
+                    <input type="hidden" value="" id="idx_color" />
+                </form>
+
+            </div>
+            <div id="statusParent_Color" style="display:none" class="alert alert-success my-alert" role="alert">
+                <div id="status_Color" class="alert-text"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnClose_color" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="btnSaveColor" type="button" class="btn btn-primary"> Save changes </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@*Modal Country *@
+@*<div class="modal fade" id="modal_country" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Product Country </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="brandFrm" enctype="multipart/form-data">
+                    <input type="text" id="productcountryName" class="form-control" value="" aria-describedby="" placeholder="Enter Product Country">
+                    <input type="hidden" value="" id="countryId" />
+                    <input type="hidden" value="" id="idx_country" />
+                </form>
+
+            </div>
+            <div id="statusParent_country" style="display:none" class="alert alert-success my-alert" role="alert">
+                <div id="status_country" class="alert-text"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnClose_country" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="btnSavecountry" type="button" class="btn btn-primary"> Save changes </button>
+
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+
+@*Modal Category *@
+<div class="modal fade" id="modal_category" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Product Category </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="brandFrm" enctype="multipart/form-data">
+                    <input type="text" id="productCategoryName" class="form-control" value="" aria-describedby="" placeholder="Enter Product Category">
+                    <input type="hidden" value="" id="categoryId" />
+                    <input type="hidden" value="" id="idx_Category" />
+
+
+                    <input id="serverUrl" type="hidden" value="@Configuration.GetSection("ServerRoot")["HostUrl"]" />
+                </form>
+
+            </div>
+            <div id="statusParent_Category" style="display:none" class="alert alert-success my-alert" role="alert">
+                <div id="status_Category" class="alert-text"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnClose_category" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="btnSaveCategory" type="button" class="btn btn-primary"> Save changes </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+@section Scripts {
+
+    <environment include="Development">
+        <script src="~/library/datatables.net/js/jquery.dataTables.js"></script>
+        <script src="~/library/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+        <link href="~/library/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+    </environment>
+
+    <environment exclude="Development">
+        <script src="~/library/datatables.net/js/jquery.dataTables.js"></script>
+        <script src="~/library/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+        <link href="~/library/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+    </environment>
+
+    <script>
+        var ServerRoot = $("#serverUrl").val();
+    </script>
+
+    <style>
+        input.form-control-sm {
+            width: 120px !important;
+        }
+    </style>
+
+
+    <script src="~/mylib/color.js"></script>
+    <script src="~/mylib/category.js"></script>
+    @*<script src="~/mylib/country.js"></script>
+    <script src="~/mylib/brand.js"></script>*@
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#btnSettings").click(function () {
+                $("#dashboard").hide();
+                $("#divDisplayProductDependencies").slideDown();
+            });
+
+
+
+            $("#btnDashboard").click(function () {
+
+                $("#divDisplayProductDependencies").slideUp();
+                $("#dashboard").show();
+            });
+
+        })
+
+    </script>
+
+
+
+}
+
+

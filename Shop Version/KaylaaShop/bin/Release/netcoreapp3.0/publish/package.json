@@ -1,0 +1,7 @@
+{
+  "name": "kaylaashop",
+  "version": "1.0.0",
+  "dependencies": {
+    "datatables.net-bs4": "^1.10.19"
+  }
+}

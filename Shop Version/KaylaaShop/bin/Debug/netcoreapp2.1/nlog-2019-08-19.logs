@@ -1,0 +1,1105 @@
+2019-08-19 00:01:12.4838|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundaryxh1Z1OUOMAtHZHbR 1636
+2019-08-19 00:01:12.9156|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 00:01:13.2222|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:01:13.2477|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:01:13.6494|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 00:10:10.6524|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-08-19 00:11:22.6937|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-08-19 00:11:23.0620|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:11:25.9093|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 2882.0719ms
+2019-08-19 00:11:26.8720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 77237.132ms 200 text/html; charset=utf-8
+2019-08-19 00:11:29.6425|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-08-19 00:11:32.4013|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3091.8843ms 404 
+2019-08-19 00:11:39.0315|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-08-19 00:11:41.7390|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2138.9403ms 404 
+2019-08-19 00:13:38.5297|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/?handler=Login application/x-www-form-urlencoded 293
+2019-08-19 00:13:40.4560|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 00:13:41.9693|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-08-19 00:13:43.3584|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostLoginAsync - ModelState is Valid
+2019-08-19 00:13:54.5546|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-08-19 00:13:58.1320|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2019-08-19 00:14:07.9455|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (538ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[address], [u].[fullName], [u].[gaurantorName], [u].[gaurantorPhoneNumber], [u].[gender], [u].[shopId]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Discriminator] IN (N'staff', N'IdentityUser') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)
+2019-08-19 00:14:11.0982|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (510ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-08-19 00:14:11.8963|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (485ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-08-19 00:14:15.7492|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (932ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2019-08-19 00:14:21.2136|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1,293ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2019-08-19 00:14:22.2500|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application signed in.
+2019-08-19 00:14:22.6620|INFO|Microsoft.AspNetCore.Mvc.RedirectToRouteResult|Executing RedirectToPageResult, redirecting to Kaylaa/dashboard.
+2019-08-19 00:14:22.7031|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 40669.147ms
+2019-08-19 00:14:22.8519|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45215.9166ms 302 
+2019-08-19 00:14:35.6979|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/dashboard  
+2019-08-19 00:14:40.3297|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/dashboard", action = "", controller = ""}. Executing action /Kaylaa/dashboard
+2019-08-19 00:14:40.5181|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:14:40.7313|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:14:41.6677|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (425ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-08-19 00:14:42.6116|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (385ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ShoppingCarts] AS [s]
+2019-08-19 00:14:43.1723|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (406ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+2019-08-19 00:14:43.8298|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (406ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'staff'
+2019-08-19 00:14:46.4780|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/dashboard in 5224.0882ms
+2019-08-19 00:14:46.9402|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23071.5221ms 200 text/html; charset=utf-8
+2019-08-19 00:15:23.9686|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:15:24.2836|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:15:24.5530|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:15:24.5530|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:15:24.5811|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:15:24.5882|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:15:25.7515|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:15:25.7553|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:15:25.8117|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2019-08-19 00:15:26.2020|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (375ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:15:26.6768|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (393ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:15:27.1878|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (467ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:15:27.6477|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (405ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:15:28.3084|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (472ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:15:28.5153|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (447ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:15:28.8248|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (398ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:15:29.0473|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (379ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:15:29.6015|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (353ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:15:29.7715|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 5200.734ms
+2019-08-19 00:15:29.9558|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (341ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:15:30.1410|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-08-19 00:15:30.5285|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6282.9956ms 500 text/html; charset=utf-8
+2019-08-19 00:15:30.5809|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (345ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:15:30.9913|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (357ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:15:31.6293|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 6986.0437ms
+2019-08-19 00:15:31.6765|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-08-19 00:15:32.0659|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7515.8764ms 500 text/html; charset=utf-8
+2019-08-19 00:17:11.5720|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:17:11.9974|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:17:12.3916|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:17:12.6631|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:17:28.3448|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (385ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:17:30.7826|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (521ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:17:32.2116|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (390ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:17:33.7510|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (467ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:17:36.1039|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (426ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:17:38.2222|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (343ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:18:01.7594|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 49756.2563ms
+2019-08-19 00:18:02.1060|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-08-19 00:18:03.1177|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 51390.2402ms 500 text/html; charset=utf-8
+2019-08-19 00:27:01.4494|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-08-19 00:27:10.4139|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-08-19 00:27:10.8798|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:27:12.3073|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 1739.4664ms
+2019-08-19 00:27:12.5803|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10986.4125ms 200 text/html; charset=utf-8
+2019-08-19 00:27:13.7200|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-08-19 00:27:13.9481|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 560.9521ms 404 
+2019-08-19 00:27:15.9055|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-08-19 00:27:16.7236|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 279.5835ms 404 
+2019-08-19 00:28:13.1165|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/?handler=Login application/x-www-form-urlencoded 293
+2019-08-19 00:28:13.2857|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 00:28:13.3213|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-08-19 00:28:13.6723|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostLoginAsync - ModelState is Valid
+2019-08-19 00:28:14.5922|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-08-19 00:28:15.5927|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2019-08-19 00:28:18.5878|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (366ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[address], [u].[fullName], [u].[gaurantorName], [u].[gaurantorPhoneNumber], [u].[gender], [u].[shopId]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Discriminator] IN (N'staff', N'IdentityUser') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)
+2019-08-19 00:28:20.6756|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (366ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-08-19 00:28:21.1766|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (314ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-08-19 00:28:21.5065|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (276ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2019-08-19 00:28:22.1124|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (325ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2019-08-19 00:28:22.3436|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application signed in.
+2019-08-19 00:28:22.6540|INFO|Microsoft.AspNetCore.Mvc.RedirectToRouteResult|Executing RedirectToPageResult, redirecting to Kaylaa/dashboard.
+2019-08-19 00:28:22.7969|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 9338.2411ms
+2019-08-19 00:28:22.8368|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9722.9444ms 302 
+2019-08-19 00:28:22.8533|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/dashboard  
+2019-08-19 00:28:23.8032|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/dashboard", action = "", controller = ""}. Executing action /Kaylaa/dashboard
+2019-08-19 00:28:23.8981|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:28:23.8981|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:28:24.5381|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (355ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-08-19 00:28:24.9624|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (278ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ShoppingCarts] AS [s]
+2019-08-19 00:28:25.2646|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (276ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+2019-08-19 00:28:25.5508|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (273ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'staff'
+2019-08-19 00:28:26.2442|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/dashboard in 2401.0484ms
+2019-08-19 00:28:26.3458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3406.9901ms 200 text/html; charset=utf-8
+2019-08-19 00:28:34.0213|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:28:35.0400|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:28:35.2984|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:28:36.6688|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:28:44.9372|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (304ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:28:49.1514|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (290ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:28:52.5092|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (288ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:28:54.4922|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (282ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:28:56.1967|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (279ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:28:58.2234|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (315ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:29:11.6690|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 36560.4674ms
+2019-08-19 00:29:12.1021|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-08-19 00:29:12.2733|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38401.3882ms 500 text/html; charset=utf-8
+2019-08-19 00:30:00.1254|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:30:19.2856|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:30:19.3783|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:30:19.4861|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:30:25.1568|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (362ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:30:25.5025|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (314ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:30:26.1152|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (289ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:30:26.4560|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (319ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:30:26.7661|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (296ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:30:27.0979|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (280ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:30:28.3223|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 8940.4117ms
+2019-08-19 00:30:28.7851|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28387.697ms 200 text/html; charset=utf-8
+2019-08-19 00:30:40.6616|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundaryqKcOfTc6zBiHUi47 1736
+2019-08-19 00:30:40.7219|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 00:30:40.7644|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:30:40.8115|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:30:41.0510|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 00:36:05.8717|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-08-19 00:36:12.4770|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-08-19 00:36:12.7407|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:36:17.7773|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 3442.1864ms
+2019-08-19 00:36:18.7144|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12342.3851ms 200 text/html; charset=utf-8
+2019-08-19 00:36:20.6843|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-08-19 00:36:20.9034|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 943.4874ms 404 
+2019-08-19 00:36:21.8226|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-08-19 00:36:21.8793|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 157.2389ms 404 
+2019-08-19 00:37:46.2767|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/?handler=Login application/x-www-form-urlencoded 293
+2019-08-19 00:37:46.4162|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 00:37:46.5583|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-08-19 00:37:47.2923|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostLoginAsync - ModelState is Valid
+2019-08-19 00:37:48.3391|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-08-19 00:37:49.3359|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2019-08-19 00:37:52.9277|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (628ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[address], [u].[fullName], [u].[gaurantorName], [u].[gaurantorPhoneNumber], [u].[gender], [u].[shopId]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Discriminator] IN (N'staff', N'IdentityUser') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)
+2019-08-19 00:37:53.6929|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (289ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-08-19 00:37:54.1031|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (295ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-08-19 00:37:54.5084|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (367ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2019-08-19 00:37:54.8717|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (299ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2019-08-19 00:37:54.9203|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application signed in.
+2019-08-19 00:37:54.9540|INFO|Microsoft.AspNetCore.Mvc.RedirectToRouteResult|Executing RedirectToPageResult, redirecting to Kaylaa/dashboard.
+2019-08-19 00:37:55.1359|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 8405.7534ms
+2019-08-19 00:37:55.2380|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8904.8808ms 302 
+2019-08-19 00:37:55.2750|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/dashboard  
+2019-08-19 00:37:55.7156|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/dashboard", action = "", controller = ""}. Executing action /Kaylaa/dashboard
+2019-08-19 00:37:55.7501|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:37:55.7501|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:37:56.1329|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (309ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-08-19 00:37:56.4176|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (269ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ShoppingCarts] AS [s]
+2019-08-19 00:37:56.7189|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (287ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+2019-08-19 00:37:57.7543|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1,025ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'staff'
+2019-08-19 00:37:59.2914|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/dashboard in 3182.5768ms
+2019-08-19 00:37:59.4524|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4034.2933ms 200 text/html; charset=utf-8
+2019-08-19 00:38:13.5883|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:38:14.1205|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:38:14.1765|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:38:14.8602|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:38:22.4046|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (265ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:38:22.8234|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (296ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:38:24.1088|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (934ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:38:24.7864|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (437ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:38:25.1463|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (289ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:38:25.5678|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (309ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:38:26.4925|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 12018.4561ms
+2019-08-19 00:38:26.7336|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12954.3447ms 200 text/html; charset=utf-8
+2019-08-19 00:38:33.8487|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundaryEt0c1WmsDGN6UMN1 1736
+2019-08-19 00:38:33.9830|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 00:38:34.1547|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:38:34.3243|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:38:34.6879|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 00:38:49.8508|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 15347.9629ms
+2019-08-19 00:38:50.1506|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16192.823ms 200 text/html; charset=utf-8
+2019-08-19 00:42:01.8555|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundaryEt0c1WmsDGN6UMN1 1736
+2019-08-19 00:42:02.2448|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 00:42:29.3543|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:42:29.7144|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:42:29.8020|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:42:29.9348|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:42:30.0257|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:42:30.1111|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:42:30.1918|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 00:42:50.1942|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2019-08-19 00:42:50.4096|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 20659.5912ms
+2019-08-19 00:42:50.4319|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 48656.7567ms 200 text/html; charset=utf-8
+2019-08-19 00:42:50.4827|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:42:50.5238|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:42:50.5631|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:42:50.5631|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (304ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:42:50.6302|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:42:50.9198|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (275ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:42:51.1957|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (268ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:42:51.8041|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (304ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:42:52.1642|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (287ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:42:52.8179|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (289ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:42:53.0579|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (281ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:42:53.1467|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 23294.5599ms
+2019-08-19 00:42:53.3455|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23863.4307ms 200 text/html; charset=utf-8
+2019-08-19 00:42:53.4001|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (281ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:42:53.7218|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (281ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:42:54.0357|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (301ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:42:54.3249|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (282ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:42:54.8845|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (269ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:42:55.2457|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 4642.4984ms
+2019-08-19 00:42:55.3296|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4822.2276ms 200 text/html; charset=utf-8
+2019-08-19 00:42:59.2626|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/KB.png  
+2019-08-19 00:42:59.4962|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/KB.png'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\KB.png'
+2019-08-19 00:42:59.5416|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 251.6434ms 200 image/png
+2019-08-19 00:43:55.1046|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:43:55.7028|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:43:55.7306|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:43:55.9660|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:43:56.1174|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:43:56.1770|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:43:56.1923|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:43:56.2524|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:43:56.7953|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (392ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:43:56.8398|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (477ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:43:57.2398|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (309ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:43:57.2701|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (360ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:43:57.7948|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (287ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:43:57.9876|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (304ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:43:58.0879|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (269ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:43:58.5097|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (278ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:43:58.6785|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (263ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:43:59.6013|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (285ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:43:59.6158|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (283ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:43:59.9261|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (282ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:43:59.9954|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 4148.9223ms
+2019-08-19 00:44:00.0803|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 3917.0661ms
+2019-08-19 00:44:00.3304|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4987.4753ms 200 text/html; charset=utf-8
+2019-08-19 00:44:00.3945|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4621.3234ms 200 text/html; charset=utf-8
+2019-08-19 00:44:02.3474|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/KB.png  
+2019-08-19 00:44:02.5890|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/KB.png'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\KB.png'
+2019-08-19 00:44:02.9542|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 305.8943ms 200 image/png
+2019-08-19 00:45:44.7158|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:45:48.4133|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-08-19 00:45:50.5283|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5463.7106ms 500 text/html; charset=utf-8
+2019-08-19 00:45:53.2479|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2019-08-19 00:45:53.5002|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\favicon.ico'
+2019-08-19 00:45:53.5362|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 427.5645ms 200 image/x-icon
+2019-08-19 00:48:40.2600|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:48:44.1718|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:48:44.4673|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:48:44.5754|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:48:46.5549|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (274ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:48:46.9520|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (284ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:48:47.3759|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (296ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:48:47.7061|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (320ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:48:47.9995|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (278ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:48:48.3173|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (304ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:48:49.7064|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 5517.0691ms
+2019-08-19 00:48:49.9107|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-08-19 00:48:50.6180|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10113.4373ms 500 text/html; charset=utf-8
+2019-08-19 00:48:52.6944|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2019-08-19 00:48:53.0833|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon.ico'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\favicon.ico'
+2019-08-19 00:48:53.1648|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 508.7888ms 200 image/x-icon
+2019-08-19 00:49:12.7571|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:49:12.9376|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:49:12.9951|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:49:13.0300|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:49:13.3574|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (295ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:49:13.6432|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (279ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:49:14.1531|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (284ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:49:14.4541|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (294ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:49:14.7411|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (274ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:49:15.0403|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (278ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:49:15.2769|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 2299.6392ms
+2019-08-19 00:49:15.3077|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-08-19 00:49:15.4276|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2727.7685ms 500 text/html; charset=utf-8
+2019-08-19 00:49:41.6402|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:49:42.2298|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:49:42.3462|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:49:42.3657|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:49:42.6608|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (283ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:49:43.1111|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (290ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:49:43.6802|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (292ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:49:44.2038|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (288ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:49:44.5216|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (296ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:49:44.9579|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (274ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:49:46.7226|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 4034.678ms
+2019-08-19 00:49:47.3316|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5341.7925ms 200 text/html; charset=utf-8
+2019-08-19 00:49:49.1199|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/KB.png  
+2019-08-19 00:49:49.4618|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/KB.png'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\KB.png'
+2019-08-19 00:49:49.7780|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 707.9858ms 200 image/png
+2019-08-19 00:50:24.6561|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:50:28.9411|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:50:28.9664|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:50:29.0127|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:50:29.3758|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (297ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:50:29.7072|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (285ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:50:30.6985|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (296ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:50:31.6915|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (287ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:50:32.0304|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (276ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:50:32.3266|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (276ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:50:32.8468|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 3826.8409ms
+2019-08-19 00:50:33.3482|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8230.6771ms 200 text/html; charset=utf-8
+2019-08-19 00:50:35.3119|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/KB.png  
+2019-08-19 00:50:35.6068|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/KB.png'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\KB.png'
+2019-08-19 00:50:35.8309|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 551.3985ms 200 image/png
+2019-08-19 00:51:22.6534|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:51:24.9034|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:51:24.9555|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:51:25.0673|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:51:25.5357|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (346ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:51:25.8977|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (346ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:51:26.2796|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (327ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:51:26.6528|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (314ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:51:27.5893|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (888ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:51:27.8846|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (271ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:51:28.1618|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 3204.5188ms
+2019-08-19 00:51:28.2330|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5615.8283ms 200 text/html; charset=utf-8
+2019-08-19 00:51:31.2163|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/KB.png  
+2019-08-19 00:51:31.5330|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/KB.png'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\KB.png'
+2019-08-19 00:51:31.7004|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 713.1261ms 200 image/png
+2019-08-19 00:51:57.6351|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:51:59.1160|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:51:59.1346|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:51:59.1505|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:51:59.4953|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (336ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:52:00.1947|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (316ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:52:00.5403|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (274ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:52:00.9542|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (286ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:52:01.3093|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (275ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:52:01.6399|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (308ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:52:02.4134|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 2748.748ms
+2019-08-19 00:52:03.5645|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5197.7146ms 200 text/html; charset=utf-8
+2019-08-19 00:52:03.8727|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/KB.png  
+2019-08-19 00:52:04.3711|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/KB.png'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\KB.png'
+2019-08-19 00:52:06.0987|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 798.6965ms 200 image/png
+2019-08-19 00:52:22.9103|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:52:23.3171|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:52:23.3984|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:52:24.1161|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:52:24.6465|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (343ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:52:25.3364|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (285ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:52:25.6394|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (274ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:52:26.2720|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (309ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:52:26.8997|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (293ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:52:27.2996|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (283ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:52:27.5355|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 4142.3036ms
+2019-08-19 00:52:27.9996|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4829.7699ms 200 text/html; charset=utf-8
+2019-08-19 00:52:30.0976|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/KB.png  
+2019-08-19 00:52:30.5651|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/KB.png'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\KB.png'
+2019-08-19 00:52:30.8724|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1065.8888ms 200 image/png
+2019-08-19 00:53:11.8440|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:53:15.6454|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:53:15.6668|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:53:15.7019|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:53:16.1074|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (309ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:53:16.4405|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (279ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:53:16.8533|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (284ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:53:17.2476|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (298ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:53:17.5418|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (278ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:53:17.8649|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (277ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:53:18.8665|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 2983.4407ms
+2019-08-19 00:53:19.1822|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7139.5732ms 200 text/html; charset=utf-8
+2019-08-19 00:53:21.6095|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/KB.png  
+2019-08-19 00:53:22.1284|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/KB.png'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\KB.png'
+2019-08-19 00:53:22.5205|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1111.3663ms 200 image/png
+2019-08-19 00:53:34.3549|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 00:53:36.8724|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 00:53:37.1346|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 00:53:37.3374|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 00:53:37.7395|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (283ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 00:53:38.0965|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (284ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 00:53:38.4130|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (287ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 00:53:38.7314|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (285ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 00:53:40.0444|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1,202ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 00:53:40.3988|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (282ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 00:53:42.5090|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 4591.9115ms
+2019-08-19 00:53:43.0626|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8177.1535ms 200 text/html; charset=utf-8
+2019-08-19 00:53:44.6482|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/KB.png  
+2019-08-19 00:53:45.0702|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/KB.png'. Physical path: 'C:\MyProjects_C\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\KB.png'
+2019-08-19 00:53:45.2622|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1328.4348ms 200 image/png
+2019-08-19 06:33:36.8095|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-08-19 06:33:56.1761|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-08-19 06:34:00.3740|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:34:02.1690|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 5933.0724ms
+2019-08-19 06:34:02.3369|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27470.1449ms 200 text/html; charset=utf-8
+2019-08-19 06:34:03.2045|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/kaylalogo.png  
+2019-08-19 06:34:03.6721|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-08-19 06:34:04.3728|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/media/logos/kaylalogo.png was not modified
+2019-08-19 06:34:04.5250|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1161.1103ms 404 
+2019-08-19 06:34:04.6774|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1575.0165ms 304 image/png
+2019-08-19 06:34:06.5338|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-08-19 06:34:07.2689|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1304.0546ms 404 
+2019-08-19 06:37:16.6046|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/?handler=Login application/x-www-form-urlencoded 250
+2019-08-19 06:37:17.7904|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 06:37:18.3730|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-08-19 06:37:19.2606|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostLoginAsync - ModelState is Valid
+2019-08-19 06:37:20.3354|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-08-19 06:37:22.6647|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2019-08-19 06:37:27.0301|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (525ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[address], [u].[fullName], [u].[gaurantorName], [u].[gaurantorPhoneNumber], [u].[gender], [u].[shopId]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Discriminator] IN (N'staff', N'IdentityUser') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)
+2019-08-19 06:37:28.5845|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (444ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-08-19 06:37:29.1081|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (349ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-08-19 06:37:29.5840|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (328ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2019-08-19 06:37:30.0550|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (300ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2019-08-19 06:37:30.2660|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application signed in.
+2019-08-19 06:37:30.3153|INFO|Microsoft.AspNetCore.Mvc.RedirectToRouteResult|Executing RedirectToPageResult, redirecting to Kaylaa/dashboard.
+2019-08-19 06:37:30.3385|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 11943.9995ms
+2019-08-19 06:37:30.3724|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 14026.5185ms 302 
+2019-08-19 06:37:30.4201|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/dashboard  
+2019-08-19 06:37:31.1580|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/dashboard", action = "", controller = ""}. Executing action /Kaylaa/dashboard
+2019-08-19 06:37:31.2166|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:37:31.2264|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:37:31.9970|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (299ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-08-19 06:37:32.2991|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (278ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ShoppingCarts] AS [s]
+2019-08-19 06:37:32.6150|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (286ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+2019-08-19 06:37:32.9377|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (302ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'staff'
+2019-08-19 06:37:33.5282|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/dashboard in 2325.0507ms
+2019-08-19 06:37:33.5834|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3130.0176ms 200 text/html; charset=utf-8
+2019-08-19 06:37:36.4839|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/logo_kaylaa2.png  
+2019-08-19 06:37:36.6983|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/media/logos/logo_kaylaa2.png was not modified
+2019-08-19 06:37:36.9176|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 792.2424ms 304 image/png
+2019-08-19 06:37:44.6872|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-08-19 06:37:45.4207|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:37:45.4689|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:37:48.8159|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:37:49.1388|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (297ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 06:37:49.4731|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (271ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 06:37:49.7747|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (270ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 06:37:50.2035|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (334ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 06:37:50.5206|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (279ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 06:37:51.6497|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (293ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 06:37:52.9586|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 7381.5694ms
+2019-08-19 06:37:53.5178|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8532.9882ms 200 text/html; charset=utf-8
+2019-08-19 06:38:02.3844|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundaryDilzyzUHAfErLj9B 1895
+2019-08-19 06:38:02.6464|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 06:38:02.7899|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:38:02.9433|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:38:03.2716|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 06:38:04.9763|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 1786.6807ms
+2019-08-19 06:38:05.5377|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2860.9851ms 200 text/html; charset=utf-8
+2019-08-19 06:39:30.4983|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/kaylaa/inventory  
+2019-08-19 06:39:41.6621|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:39:41.8271|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:39:41.9932|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:39:42.4256|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (296ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 06:39:42.7773|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (288ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 06:39:43.2592|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (390ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 06:39:43.6676|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (317ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 06:39:44.0010|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (312ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 06:39:44.4187|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (324ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 06:39:44.6720|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 3004.1168ms
+2019-08-19 06:39:44.6891|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 14287.0489ms 200 text/html; charset=utf-8
+2019-08-19 06:39:52.6293|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundary2gAXGezxOG0Ki1ty 1895
+2019-08-19 06:39:52.7381|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 06:39:52.8700|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:39:53.0619|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:39:53.1262|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 06:39:53.4688|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 307.6523ms
+2019-08-19 06:39:53.6641|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 873.0988ms 200 text/html; charset=utf-8
+2019-08-19 06:42:31.5350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/kaylaa/inventory  
+2019-08-19 06:42:50.7882|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:42:50.8185|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:42:50.9490|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:42:51.3752|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (308ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 06:42:52.2122|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (283ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 06:42:52.8906|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (372ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 06:42:53.6530|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (379ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 06:42:54.1042|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (285ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 06:42:55.1474|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (349ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 06:42:57.2741|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 5810.8113ms
+2019-08-19 06:42:57.5842|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26035.025ms 200 text/html; charset=utf-8
+2019-08-19 06:43:26.8148|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundaryNl2LwlIgyBHE8Ygx 1895
+2019-08-19 06:43:26.8456|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 06:43:27.0377|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:43:27.1509|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:43:27.3042|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 06:43:27.8472|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 385.8433ms
+2019-08-19 06:43:28.9690|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1132.4084ms 200 text/html; charset=utf-8
+2019-08-19 06:43:40.8466|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:43:41.1589|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 518.3098ms 404 
+2019-08-19 06:45:21.5207|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/kaylaa/inventory  
+2019-08-19 06:45:24.7462|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:45:24.9925|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:45:25.0960|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:45:25.5691|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (296ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 06:45:26.0103|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (384ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 06:45:26.3146|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (296ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 06:45:26.6760|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (302ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 06:45:27.0319|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (351ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 06:45:27.3817|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (289ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 06:45:28.0843|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 3135.8736ms
+2019-08-19 06:45:28.3774|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6649.4203ms 200 text/html; charset=utf-8
+2019-08-19 06:45:30.4202|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:45:30.7949|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 593.0202ms 404 
+2019-08-19 06:45:56.8404|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundarySgYHfKRscmyqyx4T 1895
+2019-08-19 06:45:56.9285|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 06:45:56.9285|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:45:56.9536|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:45:56.9950|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 06:45:57.8118|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 474.0657ms
+2019-08-19 06:45:58.2001|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 981.7299ms 200 text/html; charset=utf-8
+2019-08-19 06:45:58.3792|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/~/assets/media/misc/bg-1.jpg  
+2019-08-19 06:45:58.5149|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 286.319ms 404 
+2019-08-19 06:45:59.1646|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:45:59.3958|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 468.8285ms 404 
+2019-08-19 06:46:26.3020|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/kaylaa/inventory  
+2019-08-19 06:46:27.7599|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:46:27.7755|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:46:27.7929|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:46:28.0944|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (290ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 06:46:28.4129|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (312ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 06:46:28.9636|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (274ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 06:46:29.5347|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (269ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 06:46:29.9790|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (290ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 06:46:30.4202|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (375ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 06:46:30.9904|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 2809.3905ms
+2019-08-19 06:46:31.8173|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4700.714ms 200 text/html; charset=utf-8
+2019-08-19 06:46:32.8818|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:46:33.7804|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1061.1662ms 404 
+2019-08-19 06:46:43.9119|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundaryrkE2jqSd3a2QpP5X 1895
+2019-08-19 06:46:44.0023|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 06:46:44.0935|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:46:44.1931|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:46:44.3281|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 06:46:45.1630|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 283.1676ms
+2019-08-19 06:46:46.0222|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/~/assets/media/misc/bg-1.jpg  
+2019-08-19 06:46:46.2217|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1344.0788ms 200 text/html; charset=utf-8
+2019-08-19 06:46:46.8869|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 986.8705ms 404 
+2019-08-19 06:46:47.1430|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:46:47.5491|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1217.7666ms 404 
+2019-08-19 06:50:27.8903|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/kaylaa/inventory  
+2019-08-19 06:50:30.7241|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:50:30.8291|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:50:30.9042|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:50:32.9103|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (294ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 06:50:33.4092|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (270ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 06:50:33.8123|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (297ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 06:50:34.2655|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (390ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 06:50:34.5623|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (292ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 06:50:34.9508|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (360ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 06:50:35.8908|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 4552.6399ms
+2019-08-19 06:50:36.7523|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8176.0899ms 200 text/html; charset=utf-8
+2019-08-19 06:50:37.1808|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/kaylaa/~/assets/media/misc/bg-1.jpg  
+2019-08-19 06:50:37.5771|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 428.3462ms 404 
+2019-08-19 06:50:38.5354|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:50:38.8433|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 559.88ms 404 
+2019-08-19 06:50:53.0388|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundaryqQDnuA5GpXngjo6i 1895
+2019-08-19 06:50:53.0770|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 06:50:53.2882|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:50:53.5618|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:50:53.6657|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 06:50:54.3558|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 435.6381ms
+2019-08-19 06:50:55.1988|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1322.564ms 200 text/html; charset=utf-8
+2019-08-19 06:50:56.1692|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:50:56.9551|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1155.3639ms 404 
+2019-08-19 06:52:48.3119|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/kaylaa/inventory  
+2019-08-19 06:52:51.0578|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:52:51.1469|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:52:51.2449|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:52:51.7709|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (432ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 06:52:52.2448|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (332ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 06:52:52.5440|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (285ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 06:52:53.0430|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (270ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 06:52:53.5108|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (286ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 06:52:53.9017|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (323ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 06:52:54.8130|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 3093.8315ms
+2019-08-19 06:52:55.6422|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6763.2588ms 200 text/html; charset=utf-8
+2019-08-19 06:52:56.2721|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:52:56.7956|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 582.8294ms 404 
+2019-08-19 06:53:14.6902|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundarydIoDTyAYTIDXOisj 1895
+2019-08-19 06:53:14.8122|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 06:53:14.9620|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:53:15.0214|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:53:15.1872|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 06:53:16.9150|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 973.9341ms
+2019-08-19 06:53:17.5254|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2304.7088ms 200 text/html; charset=utf-8
+2019-08-19 06:53:20.6282|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:53:21.1376|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1141.635ms 404 
+2019-08-19 06:54:30.2138|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/kaylaa/inventory  
+2019-08-19 06:54:32.4049|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:54:32.4149|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:54:32.8242|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:54:33.2573|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (337ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 06:54:33.6618|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (350ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 06:54:34.0466|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (376ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 06:54:34.6489|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (395ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 06:54:34.9611|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (276ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 06:54:35.3512|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (294ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 06:54:36.4040|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 3367.8256ms
+2019-08-19 06:54:37.3877|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6283.6689ms 200 text/html; charset=utf-8
+2019-08-19 06:54:38.7575|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:54:39.0419|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 265.3142ms 404 
+2019-08-19 06:54:47.9480|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundary2MGaEEcBBjevB0PD 1895
+2019-08-19 06:54:48.0053|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 06:54:48.1315|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:54:48.1751|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:54:48.2545|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 06:54:49.4390|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 226.9464ms
+2019-08-19 06:54:49.8229|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1621.5331ms 200 text/html; charset=utf-8
+2019-08-19 06:54:50.6400|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:54:50.7816|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 310.8297ms 404 
+2019-08-19 06:56:01.8985|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/kaylaa/inventory  
+2019-08-19 06:56:04.1860|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:56:04.2059|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:56:04.2320|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-08-19 06:56:04.6761|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (347ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-08-19 06:56:05.1119|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (362ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-08-19 06:56:05.4866|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (364ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-08-19 06:56:05.7759|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (280ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-08-19 06:56:06.0725|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (277ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-08-19 06:56:06.4980|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (309ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-08-19 06:56:07.4077|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 2769.8214ms
+2019-08-19 06:56:08.0977|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5616.9204ms 200 text/html; charset=utf-8
+2019-08-19 06:56:10.8042|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:56:11.3986|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 585.4589ms 404 
+2019-08-19 06:56:20.9355|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundaryhxck8yaUftmdscgM 1894
+2019-08-19 06:56:20.9819|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-08-19 06:56:21.0031|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-08-19 06:56:21.0358|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-08-19 06:56:21.0847|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-08-19 06:56:22.6509|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 138.5595ms
+2019-08-19 06:56:23.3068|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1876.9032ms 200 text/html; charset=utf-8
+2019-08-19 06:56:23.9466|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-08-19 06:56:24.2983|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 487.4724ms 404 

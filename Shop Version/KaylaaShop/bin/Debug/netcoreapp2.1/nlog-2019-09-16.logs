@@ -1,0 +1,379 @@
+2019-09-16 11:13:05.9406|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-09-16 11:13:07.5725|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-09-16 11:13:08.1667|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 11:13:08.5130|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 879.1465ms
+2019-09-16 11:13:08.7205|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/skins/header/menu/light.css  
+2019-09-16 11:13:08.7324|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2846.9008ms 200 text/html; charset=utf-8
+2019-09-16 11:13:08.7525|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/skins/header/base/light.css  
+2019-09-16 11:13:08.7525|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/style.bundle.css  
+2019-09-16 11:13:08.7640|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/header/menu/light.css'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\css\demo1\skins\header\menu\light.css'
+2019-09-16 11:13:08.7791|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 170.4087ms 200 text/css
+2019-09-16 11:13:08.7791|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/vendors.bundle.css  
+2019-09-16 11:13:08.8052|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/login-2.css  
+2019-09-16 11:13:08.8284|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/header/base/light.css'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\css\demo1\skins\header\base\light.css'
+2019-09-16 11:13:08.8378|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/login-2.css'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\css\demo1\login-2.css'
+2019-09-16 11:13:08.8712|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 44.2012ms 200 text/css
+2019-09-16 11:13:08.8712|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 109.7507ms 200 text/css
+2019-09-16 11:13:08.9152|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/skins/brand/dark.css  
+2019-09-16 11:13:08.9612|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/skins/aside/dark.css  
+2019-09-16 11:13:08.9641|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/customstyle.css  
+2019-09-16 11:13:08.9641|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/brand/dark.css'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\css\demo1\skins\brand\dark.css'
+2019-09-16 11:13:08.9874|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/vendors.bundle.js  
+2019-09-16 11:13:08.9874|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 89.8243ms 200 text/css
+2019-09-16 11:13:09.0489|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/customstyle.css'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\css\customstyle.css'
+2019-09-16 11:13:09.0828|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/scripts.bundle.js  
+2019-09-16 11:13:09.0977|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 139.6781ms 200 text/css
+2019-09-16 11:13:09.2208|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/skins/aside/dark.css'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\css\demo1\skins\aside\dark.css'
+2019-09-16 11:13:09.2326|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 303.1563ms 200 text/css
+2019-09-16 11:13:09.4025|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-09-16 11:13:09.4172|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 150.873ms 404 
+2019-09-16 11:13:09.4464|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/kaylalogo.png  
+2019-09-16 11:13:09.5147|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/kaylalogo.png'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\kaylalogo.png'
+2019-09-16 11:13:09.5410|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/vendors.bundle.css'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\vendors\global\vendors.bundle.css'
+2019-09-16 11:13:09.8465|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 125.8333ms 200 image/png
+2019-09-16 11:13:10.2516|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1066.9853ms 200 text/css
+2019-09-16 11:13:10.3626|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/js/demo1/scripts.bundle.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\js\demo1\scripts.bundle.js'
+2019-09-16 11:13:10.5102|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1349.0761ms 200 application/javascript
+2019-09-16 11:13:11.3004|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/css/demo1/style.bundle.css'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\css\demo1\style.bundle.css'
+2019-09-16 11:13:11.5833|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2598.9366ms 200 text/css
+2019-09-16 11:13:11.8944|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/bg/shop_bg.jpg  
+2019-09-16 11:13:12.9841|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/vendors.bundle.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\vendors\global\vendors.bundle.js'
+2019-09-16 11:13:13.0409|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4008.2876ms 200 application/javascript
+2019-09-16 11:13:13.8126|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-09-16 11:13:13.8624|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 284.6035ms 404 
+2019-09-16 11:13:14.2978|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/bg/shop_bg.jpg'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\bg\shop_bg.jpg'
+2019-09-16 11:13:14.4535|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2700.3051ms 200 image/jpeg
+2019-09-16 11:13:14.4952|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/favicon.ico  
+2019-09-16 11:13:14.5533|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/favicon.ico'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\favicon.ico'
+2019-09-16 11:13:14.5875|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 98.8985ms 200 image/x-icon
+2019-09-16 11:13:17.5392|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/?handler=Login application/x-www-form-urlencoded 250
+2019-09-16 11:13:17.6081|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-09-16 11:13:17.6566|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-09-16 11:13:17.7606|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostLoginAsync - ModelState is Valid
+2019-09-16 11:13:18.2665|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-09-16 11:13:18.4417|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2019-09-16 11:13:22.6979|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (605ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[address], [u].[fullName], [u].[gaurantorName], [u].[gaurantorPhoneNumber], [u].[gender], [u].[shopId]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Discriminator] IN (N'staff', N'IdentityUser') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)
+2019-09-16 11:13:23.5526|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (534ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-09-16 11:13:24.1742|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (435ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-09-16 11:13:24.7294|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (426ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2019-09-16 11:13:25.3250|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (495ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2019-09-16 11:13:25.3695|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application signed in.
+2019-09-16 11:13:25.4794|INFO|Microsoft.AspNetCore.Mvc.RedirectToRouteResult|Executing RedirectToPageResult, redirecting to Kaylaa/dashboard.
+2019-09-16 11:13:25.4948|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 7827.1923ms
+2019-09-16 11:13:25.5247|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7972.6873ms 302 
+2019-09-16 11:13:25.5451|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/dashboard  
+2019-09-16 11:13:25.5786|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/dashboard", action = "", controller = ""}. Executing action /Kaylaa/dashboard
+2019-09-16 11:13:25.6332|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-09-16 11:13:25.6697|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 11:13:26.2123|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (484ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-09-16 11:13:26.7258|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (496ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ShoppingCarts] AS [s]
+2019-09-16 11:13:27.2810|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (498ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+2019-09-16 11:13:27.7553|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (457ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'staff'
+2019-09-16 11:13:28.6059|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css  
+2019-09-16 11:13:28.6435|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/dashboard in 2987.6559ms
+2019-09-16 11:13:28.7758|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3116.4073ms 200 text/html; charset=utf-8
+2019-09-16 11:13:28.8445|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/flags/020-flag.svg  
+2019-09-16 11:13:28.9109|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/jquery/dist/jquery.js  
+2019-09-16 11:13:29.1954|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\vendors\custom\fullcalendar\fullcalendar.bundle.css'
+2019-09-16 11:13:29.3092|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/flags/016-spain.svg  
+2019-09-16 11:13:29.3389|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 731.9092ms 200 text/css
+2019-09-16 11:13:29.4050|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/flags/017-germany.svg  
+2019-09-16 11:13:29.4576|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/flags/016-spain.svg'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\flags\016-spain.svg'
+2019-09-16 11:13:29.4736|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/users/300_25.jpg  
+2019-09-16 11:13:29.5228|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 773.5261ms 200 image/svg+xml
+2019-09-16 11:13:29.7301|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/flags/017-germany.svg'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\flags\017-germany.svg'
+2019-09-16 11:13:29.8144|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/fonts/flaticon2/Flaticon2.woff  
+2019-09-16 11:13:30.0399|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/users/300_25.jpg'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\users\300_25.jpg'
+2019-09-16 11:13:30.2369|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-09-16 11:13:30.2906|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1064.5254ms 200 image/svg+xml
+2019-09-16 11:13:30.4298|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 723.5779ms 200 image/jpeg
+2019-09-16 11:13:30.6233|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/jquery/dist/jquery.slim.js  
+2019-09-16 11:13:30.7155|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/fonts/flaticon2/Flaticon2.woff'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\vendors\global\fonts\flaticon2\Flaticon2.woff'
+2019-09-16 11:13:30.8236|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/logo_kaylaa2.png  
+2019-09-16 11:13:30.8973|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1216.4204ms 200 application/font-woff
+2019-09-16 11:13:30.9211|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/library/jquery/dist/jquery.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\library\jquery\dist\jquery.js'
+2019-09-16 11:13:30.9401|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/logo_kaylaa2.png'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\logo_kaylaa2.png'
+2019-09-16 11:13:30.9487|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/library/jquery/dist/jquery.slim.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\library\jquery\dist\jquery.slim.js'
+2019-09-16 11:13:30.9487|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2257.2701ms 200 image/png
+2019-09-16 11:13:30.9734|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 659.7361ms 200 application/javascript
+2019-09-16 11:13:30.9821|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js  
+2019-09-16 11:13:31.0220|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/bootstrap/dist/js/bootstrap.js  
+2019-09-16 11:13:31.2048|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2127.266ms 200 application/javascript
+2019-09-16 11:13:31.2672|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/flags/020-flag.svg'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\flags\020-flag.svg'
+2019-09-16 11:13:31.4086|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/fonts/line-awesome/line-awesome-v=1.1..woff2  
+2019-09-16 11:13:31.4447|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/library/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\library\bootstrap\dist\js\bootstrap.js'
+2019-09-16 11:13:31.5944|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-09-16 11:13:31.8354|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 469.2214ms 200 application/javascript
+2019-09-16 11:13:32.2403|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/fonts/line-awesome/line-awesome-v=1.1..woff2'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\vendors\global\fonts\line-awesome\line-awesome-v=1.1..woff2'
+2019-09-16 11:13:32.3562|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2615.2898ms 200 image/svg+xml
+2019-09-16 11:13:32.4835|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/mylib/brand.js  
+2019-09-16 11:13:32.6798|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/mylib/color.js  
+2019-09-16 11:13:32.7692|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/mylib/category.js  
+2019-09-16 11:13:32.9990|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\vendors\custom\fullcalendar\fullcalendar.bundle.js'
+2019-09-16 11:13:33.0353|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/mylib/category.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\mylib\category.js'
+2019-09-16 11:13:33.1443|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/mylib/color.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\mylib\color.js'
+2019-09-16 11:13:33.2151|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/mylib/brand.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\mylib\brand.js'
+2019-09-16 11:13:33.3005|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 801.8189ms 200 application/javascript
+2019-09-16 11:13:33.3933|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 787.7593ms 200 application/javascript
+2019-09-16 11:13:33.4373|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1048.0293ms 200 application/javascript
+2019-09-16 11:13:33.4373|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/mylib/country.js  
+2019-09-16 11:13:33.4508|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2040.9746ms 200 application/javascript
+2019-09-16 11:13:33.4845|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1040.8048ms 200 font/woff2
+2019-09-16 11:13:33.5033|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/dashboard.js  
+2019-09-16 11:13:33.5216|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/custom/gmaps/gmaps.js  
+2019-09-16 11:13:33.6217|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/mylib/country.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\mylib\country.js'
+2019-09-16 11:13:33.6217|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/fonts/@fortawesome/fa-solid-900.woff2  
+2019-09-16 11:13:33.6665|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 292.7207ms 200 application/javascript
+2019-09-16 11:13:33.7119|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/js/demo1/pages/dashboard.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\js\demo1\pages\dashboard.js'
+2019-09-16 11:13:33.7783|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/users/100_12.jpg  
+2019-09-16 11:13:33.8961|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 282.6355ms 200 application/javascript
+2019-09-16 11:13:34.1276|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/custom/gmaps/gmaps.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\vendors\custom\gmaps\gmaps.js'
+2019-09-16 11:13:34.3032|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/users/100_12.jpg'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\users\100_12.jpg'
+2019-09-16 11:13:34.3374|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/users/300_21.jpg  
+2019-09-16 11:13:34.3454|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 664.907ms 200 image/jpeg
+2019-09-16 11:13:34.3596|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 700.7001ms 200 application/javascript
+2019-09-16 11:13:34.3932|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-09-16 11:13:34.6473|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/users/300_21.jpg'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\users\300_21.jpg'
+2019-09-16 11:13:34.9154|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 773.6357ms 200 image/jpeg
+2019-09-16 11:13:35.2856|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/fonts/@fortawesome/fa-solid-900.woff2'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\vendors\global\fonts\@fortawesome\fa-solid-900.woff2'
+2019-09-16 11:13:35.3374|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2929.2051ms 200 font/woff2
+2019-09-16 11:13:35.3452|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/logos/KB.png  
+2019-09-16 11:13:35.3653|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/logos/KB.png'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\logos\KB.png'
+2019-09-16 11:13:35.4246|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.0452ms 200 image/png
+2019-09-16 11:23:15.9243|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-09-16 11:23:16.1908|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-09-16 11:23:16.2103|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-09-16 11:23:16.5308|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 11:23:18.6925|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (410ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-09-16 11:23:19.2026|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (446ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-09-16 11:23:19.6127|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (385ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-09-16 11:23:20.0333|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (378ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-09-16 11:23:20.5375|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (468ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-09-16 11:23:21.8656|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1,267ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-09-16 11:23:22.1486|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 5916.7038ms
+2019-09-16 11:23:22.2340|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/datatables.net-bs4/css/dataTables.bootstrap4.css  
+2019-09-16 11:23:22.3389|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/datatables.net-bs4/js/dataTables.bootstrap4.js  
+2019-09-16 11:23:22.3570|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6333.3574ms 200 text/html; charset=utf-8
+2019-09-16 11:23:22.9689|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/products/empty2.png  
+2019-09-16 11:23:23.2139|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/library/datatables.net-bs4/css/dataTables.bootstrap4.css'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\library\datatables.net-bs4\css\dataTables.bootstrap4.css'
+2019-09-16 11:23:23.2898|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/datatables.net/js/jquery.dataTables.js  
+2019-09-16 11:23:23.4582|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/media/products/empty2.png'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\media\products\empty2.png'
+2019-09-16 11:23:23.5470|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1048.9453ms 200 text/css
+2019-09-16 11:23:23.5697|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1119.8441ms 200 image/png
+2019-09-16 11:23:23.5845|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/library/datatables.net/js/jquery.dataTables.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\library\datatables.net\js\jquery.dataTables.js'
+2019-09-16 11:23:23.6345|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/library/datatables.net-bs4/js/dataTables.bootstrap4.js'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\library\datatables.net-bs4\js\dataTables.bootstrap4.js'
+2019-09-16 11:23:23.6360|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1279.299ms 200 application/javascript
+2019-09-16 11:23:23.6601|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1392.9542ms 200 application/javascript
+2019-09-16 11:23:23.8134|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/fonts/flaticon/Flaticon.woff  
+2019-09-16 11:23:23.8544|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-09-16 11:23:24.1658|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/assets/vendors/global/fonts/flaticon/Flaticon.woff'. Physical path: 'C:\MyProjects_Win\KaylaaShop\KaylaaShop\wwwroot\assets\vendors\global\fonts\flaticon\Flaticon.woff'
+2019-09-16 11:23:24.1952|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 509.2274ms 200 application/font-woff
+2019-09-16 11:23:31.1266|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/Kaylaa/Inventory?handler=encode multipart/form-data; boundary=----WebKitFormBoundaryLOfvjl0HrlLTDGXz 1895
+2019-09-16 11:23:31.1925|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-09-16 11:23:31.2208|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-09-16 11:23:31.2398|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-09-16 11:23:31.3208|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostEncode - ModelState is Invalid
+2019-09-16 11:23:31.7401|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 345.9723ms
+2019-09-16 11:23:31.9426|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 620.0415ms 200 text/html; charset=utf-8
+2019-09-16 11:24:40.7572|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Sales  
+2019-09-16 11:24:40.8600|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Sales", action = "", controller = ""}. Executing action /Kaylaa/Sales
+2019-09-16 11:24:40.8846|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-09-16 11:24:40.8992|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 11:24:41.3874|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (360ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-09-16 11:24:41.8527|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (399ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-09-16 11:24:41.9519|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from Product <generated>_3 in DbSet<Product> select [<generated>_3]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-09-16 11:24:42.3735|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (370ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[NormalSellingPrice], [p].[costPrice], [p].[discountSellingPrice], [p].[lastStockDate], [p].[prodCode], [p].[prodSize], [p].[productBrandId], [p].[productCategoryId], [p].[productColorId], [p].[productCountryId], [p].[productImageUrl], [p].[quantityAvailable], [p].[salesDiscount], [p].[shopId], [p].[status]
+FROM [Products] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-09-16 11:24:42.6310|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Sales in 1632.3337ms
+2019-09-16 11:24:42.7561|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1879.2613ms 200 text/html; charset=utf-8
+2019-09-16 11:24:48.4718|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Sales?pageIndex=2  
+2019-09-16 11:24:48.5283|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Sales", action = "", controller = ""}. Executing action /Kaylaa/Sales
+2019-09-16 11:24:48.5877|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-09-16 11:24:48.6003|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 11:24:48.9352|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (317ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-09-16 11:24:49.4158|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (462ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-09-16 11:24:49.8619|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (414ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[NormalSellingPrice], [p].[costPrice], [p].[discountSellingPrice], [p].[lastStockDate], [p].[prodCode], [p].[prodSize], [p].[productBrandId], [p].[productCategoryId], [p].[productColorId], [p].[productCountryId], [p].[productImageUrl], [p].[quantityAvailable], [p].[salesDiscount], [p].[shopId], [p].[status]
+FROM [Products] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-09-16 11:24:50.1220|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Sales in 1378.0095ms
+2019-09-16 11:24:50.7836|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1660.2081ms 200 text/html; charset=utf-8
+2019-09-16 11:26:46.0063|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Sales  
+2019-09-16 11:26:46.0456|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Sales", action = "", controller = ""}. Executing action /Kaylaa/Sales
+2019-09-16 11:26:46.0736|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-09-16 11:26:46.0736|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 11:26:46.5394|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (442ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-09-16 11:26:47.9440|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1,374ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-09-16 11:26:48.4032|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (454ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[NormalSellingPrice], [p].[costPrice], [p].[discountSellingPrice], [p].[lastStockDate], [p].[prodCode], [p].[prodSize], [p].[productBrandId], [p].[productCategoryId], [p].[productColorId], [p].[productCountryId], [p].[productImageUrl], [p].[quantityAvailable], [p].[salesDiscount], [p].[shopId], [p].[status]
+FROM [Products] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2019-09-16 11:26:49.2933|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Sales in 2734.2921ms
+2019-09-16 11:26:49.5048|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3293.9662ms 200 text/html; charset=utf-8
+2019-09-16 11:26:51.0983|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Expenses  
+2019-09-16 11:26:51.1891|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Expenses", action = "", controller = ""}. Executing action /Kaylaa/Expenses
+2019-09-16 11:26:51.1891|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-09-16 11:26:51.2077|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 11:26:51.6226|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-09-16 11:26:51.6910|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Expenses in 487.945ms
+2019-09-16 11:26:51.8461|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 634.9899ms 200 text/html; charset=utf-8
+2019-09-16 11:26:55.6753|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Inventory  
+2019-09-16 11:26:55.7560|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Inventory", action = "", controller = ""}. Executing action /Kaylaa/Inventory
+2019-09-16 11:26:55.7707|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-09-16 11:26:55.7866|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 11:26:56.2065|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (416ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductColors] AS [p]
+2019-09-16 11:26:56.7178|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (504ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCountries] AS [p]
+2019-09-16 11:26:57.1606|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (403ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductCategories] AS [p]
+2019-09-16 11:26:57.6411|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (476ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [ProductBrands] AS [p]
+2019-09-16 11:26:58.0420|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (396ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[ShopAddress], [s].[ShopName]
+FROM [shops] AS [s]
+2019-09-16 11:26:58.5640|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (514ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[prodCode]
+FROM [Products] AS [r]
+WHERE [r].[prodCode] = @__code_0
+2019-09-16 11:26:58.7175|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Inventory in 2811.7351ms
+2019-09-16 11:26:58.8510|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3118.8954ms 200 text/html; charset=utf-8
+2019-09-16 13:11:33.5379|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/dashboard  
+2019-09-16 13:11:33.6001|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/dashboard", action = "", controller = ""}. Executing action /Kaylaa/dashboard
+2019-09-16 13:11:33.6785|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed.
+2019-09-16 13:11:33.7104|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-09-16 13:11:33.7643|INFO|Microsoft.AspNetCore.Mvc.ChallengeResult|Executing ChallengeResult with authentication schemes ().
+2019-09-16 13:11:33.8634|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was challenged.
+2019-09-16 13:11:33.9829|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/dashboard in 272.7018ms
+2019-09-16 13:11:34.1553|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 461.2493ms 302 
+2019-09-16 13:11:34.2835|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/index?ReturnUrl=%2FKaylaa%2Fdashboard  
+2019-09-16 13:11:34.3536|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-09-16 13:11:34.3901|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 13:11:34.5444|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 84.4397ms
+2019-09-16 13:11:34.7758|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 332.511ms 200 text/html; charset=utf-8
+2019-09-16 13:11:35.1574|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-09-16 13:11:35.7164|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 378.5787ms 404 
+2019-09-16 13:11:39.0758|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/?handler=Login application/x-www-form-urlencoded 250
+2019-09-16 13:11:39.1587|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-09-16 13:11:39.1822|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-09-16 13:11:39.2050|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostLoginAsync - ModelState is Valid
+2019-09-16 13:11:43.9532|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (850ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[address], [u].[fullName], [u].[gaurantorName], [u].[gaurantorPhoneNumber], [u].[gender], [u].[shopId]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Discriminator] IN (N'staff', N'IdentityUser') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)
+2019-09-16 13:11:45.0678|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (842ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-09-16 13:11:46.0080|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (725ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-09-16 13:11:46.9713|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (871ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2019-09-16 13:11:47.7537|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (774ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2019-09-16 13:11:47.7616|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application signed in.
+2019-09-16 13:11:47.7795|INFO|Microsoft.AspNetCore.Mvc.RedirectToRouteResult|Executing RedirectToPageResult, redirecting to Kaylaa/dashboard.
+2019-09-16 13:11:47.7992|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 8601.3682ms
+2019-09-16 13:11:47.8235|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8738.3918ms 302 
+2019-09-16 13:11:47.8235|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/dashboard  
+2019-09-16 13:11:47.8476|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/dashboard", action = "", controller = ""}. Executing action /Kaylaa/dashboard
+2019-09-16 13:11:47.8620|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-09-16 13:11:47.9306|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 13:11:48.8760|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (932ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-09-16 13:11:49.7520|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (817ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ShoppingCarts] AS [s]
+2019-09-16 13:11:50.5554|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (748ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+2019-09-16 13:11:51.2897|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (699ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'staff'
+2019-09-16 13:11:51.5868|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/dashboard in 3444.6589ms
+2019-09-16 13:11:52.2848|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3869.3836ms 200 text/html; charset=utf-8
+2019-09-16 14:53:25.1505|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/Expenses  
+2019-09-16 14:53:26.0685|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/Expenses", action = "", controller = ""}. Executing action /Kaylaa/Expenses
+2019-09-16 14:53:26.1650|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed.
+2019-09-16 14:53:26.2432|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-09-16 14:53:26.3552|INFO|Microsoft.AspNetCore.Mvc.ChallengeResult|Executing ChallengeResult with authentication schemes ().
+2019-09-16 14:53:26.3884|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was challenged.
+2019-09-16 14:53:26.4055|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/Expenses in 278.2986ms
+2019-09-16 14:53:26.4382|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2522.2332ms 302 
+2019-09-16 14:53:26.4549|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/index?ReturnUrl=%2FKaylaa%2FExpenses  
+2019-09-16 14:53:26.4878|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-09-16 14:53:26.5077|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-09-16 14:53:26.8999|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 64.5951ms
+2019-09-16 14:53:27.2829|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 463.8771ms 200 text/html; charset=utf-8
+2019-09-16 14:53:27.8955|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-09-16 14:53:28.2184|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 499.6092ms 404 

@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{BD5C6A04-98A6-4313-9942-20A04982009D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="KaylaaShop/wwwroot/mylib/country.js">
+    <Files>
+      <File FileName="KaylaaShop/wwwroot/mylib/brand.js" Line="3" Column="3" />
+      <File FileName="KaylaaShop/wwwroot/mylib/category.js" Line="2" Column="43" />
+      <File FileName="KaylaaShop/wwwroot/mylib/color.js" Line="4" Column="1" />
+      <File FileName="KaylaaShop/wwwroot/mylib/country.js" Line="5" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="KaylaaShop" expanded="True">
+            <Node name="KaylaaShop" expanded="True">
+              <Node name="Pages" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="mylib" expanded="True">
+                  <Node name="country.js" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.KaylaaShop PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

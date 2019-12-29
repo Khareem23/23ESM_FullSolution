@@ -1,0 +1,8 @@
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\bin\Release\netcoreapp3.0\KaylaaShop.Infastructure.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\bin\Release\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\bin\Release\netcoreapp3.0\KaylaaShop.Infastructure.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\obj\Release\netcoreapp3.0\KaylaaShop.Infastructure.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\obj\Release\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\obj\Release\netcoreapp3.0\KaylaaShop.Infastructure.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\obj\Release\netcoreapp3.0\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Infastructure\obj\Release\netcoreapp3.0\KaylaaShop.Infastructure.pdb

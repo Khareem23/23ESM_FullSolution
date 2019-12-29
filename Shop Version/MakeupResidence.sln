@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeupResidence", "KaylaaShop\MakeupResidence.csproj", "{BD5C6A04-98A6-4313-9942-20A04982009D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaylaaShop.Core", "KaylaaShop.Core\KaylaaShop.Core.csproj", "{A0696BB9-A11B-4355-A637-EC21AA0E74E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaylaaShop.Data", "KaylaaShop.Data\KaylaaShop.Data.csproj", "{5EF95633-E0FB-4F73-B134-FD1C5EF3244B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E0AD91B0-76BA-4C5A-8237-DB84DA0A2849}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaylaaShop.Infastructure", "KaylaaShop.Infastructure\KaylaaShop.Infastructure.csproj", "{FDD6D418-4AD6-497E-8CB5-CB840ED14DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncMan", "SyncMan\SyncMan.csproj", "{6FA7BF53-52E2-4C34-AD02-66BC020B8C8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD5C6A04-98A6-4313-9942-20A04982009D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5C6A04-98A6-4313-9942-20A04982009D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5C6A04-98A6-4313-9942-20A04982009D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5C6A04-98A6-4313-9942-20A04982009D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0696BB9-A11B-4355-A637-EC21AA0E74E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0696BB9-A11B-4355-A637-EC21AA0E74E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0696BB9-A11B-4355-A637-EC21AA0E74E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0696BB9-A11B-4355-A637-EC21AA0E74E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF95633-E0FB-4F73-B134-FD1C5EF3244B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF95633-E0FB-4F73-B134-FD1C5EF3244B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF95633-E0FB-4F73-B134-FD1C5EF3244B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF95633-E0FB-4F73-B134-FD1C5EF3244B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD6D418-4AD6-497E-8CB5-CB840ED14DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD6D418-4AD6-497E-8CB5-CB840ED14DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD6D418-4AD6-497E-8CB5-CB840ED14DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD6D418-4AD6-497E-8CB5-CB840ED14DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA7BF53-52E2-4C34-AD02-66BC020B8C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA7BF53-52E2-4C34-AD02-66BC020B8C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA7BF53-52E2-4C34-AD02-66BC020B8C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA7BF53-52E2-4C34-AD02-66BC020B8C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10645A10-C791-43F7-AD99-9A204FC7ADBF}
+	EndGlobalSection
+EndGlobal

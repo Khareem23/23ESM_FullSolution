@@ -1,0 +1,14 @@
+﻿
+@media print {
+    div#allSoldProductsTable_length.dataTables_length {
+        display: none !important;
+    }
+
+    div#allSoldProductsTable_info.dataTables_info {
+        display: none !important;
+    }
+
+    ul.pagination {
+        display: none !important;
+    }
+}

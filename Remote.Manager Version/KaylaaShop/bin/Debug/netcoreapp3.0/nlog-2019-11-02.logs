@@ -1,0 +1,60 @@
+2019-11-02 16:11:08.6860|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2019-11-02 16:11:58.5518|WARN|Microsoft.AspNetCore.Identity.UserManager|User 86d10d88-c38f-47ae-8d31-183ac6299083 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresDigit;PasswordRequiresUpper.
+2019-11-02 16:12:26.8145|WARN|Microsoft.AspNetCore.Identity.UserManager|User 86d10d88-c38f-47ae-8d31-183ac6299083 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresUpper.
+2019-11-02 16:12:44.2930|WARN|Microsoft.AspNetCore.Identity.UserManager|User 86d10d88-c38f-47ae-8d31-183ac6299083 password validation failed: PasswordRequiresNonAlphanumeric.
+2019-11-02 16:14:38.4401|WARN|Microsoft.AspNetCore.Identity.UserManager|Invalid password for user 86d10d88-c38f-47ae-8d31-183ac6299083.
+2019-11-02 16:14:38.4719|WARN|Microsoft.AspNetCore.Identity.SignInManager|User 86d10d88-c38f-47ae-8d31-183ac6299083 failed to provide the correct password.
+2019-11-02 16:27:29.6534|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2019-11-02 16:28:39.6904|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (67ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[ShoppingCartId], [s].[CustomerId], [s].[DateSynced], [s].[ShopId], [s].[StaffId], [s].[SyncId], [s].[SyncStatus], [s].[SyncTrackId], [s].[UnSyncedEvents], [s].[salesdate], [s].[shopId], [s].[totalPrice], [s].[totalProfit], [s].[totalQuantity]
+FROM [ShoppingCarts] AS [s]
+2019-11-02 16:28:40.3907|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'KaylaaShop.Data.KaylaaDataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DateSynced'.
+Invalid column name 'SyncId'.
+Invalid column name 'SyncStatus'.
+Invalid column name 'SyncTrackId'.
+Invalid column name 'UnSyncedEvents'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:25c65a4d-0eb7-40e7-ad60-f32c690347db
+Error Number:207,State:1,Class:16
+2019-11-02 17:34:44.9895|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2019-11-02 18:11:24.3861|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[ShoppingCartId], [s].[CustomerId], [s].[DateSynced], [s].[ShopId], [s].[StaffId], [s].[SyncId], [s].[SyncStatus], [s].[SyncTrackId], [s].[UnSyncedEvents], [s].[salesdate], [s].[shopId], [s].[totalPrice], [s].[totalProfit], [s].[totalQuantity]
+FROM [ShoppingCarts] AS [s]
+2019-11-02 18:11:24.6857|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'KaylaaShop.Data.KaylaaDataContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DateSynced'.
+Invalid column name 'SyncId'.
+Invalid column name 'SyncStatus'.
+Invalid column name 'SyncTrackId'.
+Invalid column name 'UnSyncedEvents'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:35bb2dfd-22a5-43f0-93e2-65a123f01092
+Error Number:207,State:1,Class:16

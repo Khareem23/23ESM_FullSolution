@@ -1,0 +1,282 @@
+2019-10-08 13:03:15.6179|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-10-08 13:03:17.1652|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-10-08 13:03:17.9122|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-10-08 13:03:18.3169|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 1093.656ms
+2019-10-08 13:03:18.3588|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2742.6357ms 200 text/html; charset=utf-8
+2019-10-08 13:03:18.6991|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/vendors.bundle.css  
+2019-10-08 13:03:18.7179|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/skins/header/base/light.css  
+2019-10-08 13:03:18.7179|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/login-2.css  
+2019-10-08 13:03:18.9522|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/vendors.bundle.css was not modified
+2019-10-08 13:03:18.9875|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/skins/header/base/light.css was not modified
+2019-10-08 13:03:19.0380|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/login-2.css was not modified
+2019-10-08 13:03:19.0845|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 284.9557ms 304 text/css
+2019-10-08 13:03:19.0845|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 320.591ms 304 text/css
+2019-10-08 13:03:19.1206|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 369.6237ms 304 text/css
+2019-10-08 13:03:19.1427|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/style.bundle.css  
+2019-10-08 13:03:19.2090|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/skins/header/menu/light.css  
+2019-10-08 13:03:19.2293|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/customstyle.css  
+2019-10-08 13:03:19.2293|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/style.bundle.css was not modified
+2019-10-08 13:03:19.2489|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/skins/header/menu/light.css was not modified
+2019-10-08 13:03:19.2594|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/customstyle.css was not modified
+2019-10-08 13:03:19.2732|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 111.2851ms 304 text/css
+2019-10-08 13:03:19.2961|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 86.11ms 304 text/css
+2019-10-08 13:03:19.3278|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 153.599ms 304 text/css
+2019-10-08 13:03:19.3599|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/skins/brand/dark.css  
+2019-10-08 13:03:19.3948|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/css/demo1/skins/aside/dark.css  
+2019-10-08 13:03:19.3948|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-10-08 13:03:19.4089|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/skins/brand/dark.css was not modified
+2019-10-08 13:03:19.4386|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/skins/aside/dark.css was not modified
+2019-10-08 13:03:19.4587|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 126.1622ms 304 text/css
+2019-10-08 13:03:19.4587|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 126.4989ms 304 text/css
+2019-10-08 13:03:19.4587|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 114.3667ms 404 
+2019-10-08 13:03:19.4776|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/vendors.bundle.js  
+2019-10-08 13:03:19.4908|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/scripts.bundle.js  
+2019-10-08 13:03:19.6759|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/vendors.bundle.js was not modified
+2019-10-08 13:03:19.7727|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/js/demo1/scripts.bundle.js was not modified
+2019-10-08 13:03:19.8195|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 247.9085ms 304 application/javascript
+2019-10-08 13:03:19.8866|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 356.7125ms 304 application/javascript
+2019-10-08 13:03:19.9180|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/bg/shop_bg.jpg  
+2019-10-08 13:03:20.0664|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/media/bg/shop_bg.jpg was not modified
+2019-10-08 13:03:20.1589|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 232.2394ms 304 image/jpeg
+2019-10-08 13:03:20.1713|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/fonts/@fortawesome/fa-solid-900.woff2  
+2019-10-08 13:03:20.1713|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/fonts/@fortawesome/fa-solid-900.woff2 was not modified
+2019-10-08 13:03:20.2049|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38.0839ms 304 font/woff2
+2019-10-08 13:03:20.6094|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-10-08 13:03:21.0127|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.9642ms 404 
+2019-10-08 13:03:25.1025|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/?handler=Login application/x-www-form-urlencoded 250
+2019-10-08 13:03:25.1724|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-10-08 13:03:25.1881|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-10-08 13:03:25.3804|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostLoginAsync - ModelState is Valid
+2019-10-08 13:03:25.9145|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-10-08 13:03:26.0937|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2019-10-08 13:03:29.9384|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (685ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Discriminator], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName], [u].[address], [u].[fullName], [u].[gaurantorName], [u].[gaurantorPhoneNumber], [u].[gender], [u].[shopId]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[Discriminator] IN (N'staff', N'IdentityUser') AND ([u].[NormalizedEmail] = @__normalizedEmail_0)
+2019-10-08 13:03:30.8870|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (554ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0
+2019-10-08 13:03:31.3757|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (423ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0
+2019-10-08 13:03:31.8500|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (447ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2019-10-08 13:03:32.3036|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (412ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0
+2019-10-08 13:03:32.3342|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application signed in.
+2019-10-08 13:03:32.3771|INFO|Microsoft.AspNetCore.Mvc.RedirectToRouteResult|Executing RedirectToPageResult, redirecting to Kaylaa/dashboard.
+2019-10-08 13:03:32.4097|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 7211.6456ms
+2019-10-08 13:03:32.4348|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7387.002ms 302 
+2019-10-08 13:03:32.4451|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/Kaylaa/dashboard  
+2019-10-08 13:03:32.4866|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Kaylaa/dashboard", action = "", controller = ""}. Executing action /Kaylaa/dashboard
+2019-10-08 13:03:32.5660|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful.
+2019-10-08 13:03:32.8702|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-10-08 13:03:33.4665|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (538ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE [x].[quantityAvailable] < 1
+2019-10-08 13:03:33.9180|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (389ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2019-10-08 13:03:34.3631|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (414ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ShoppingCarts] AS [s]
+2019-10-08 13:03:34.7795|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (408ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+2019-10-08 13:03:35.1893|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (402ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Discriminator] = N'staff'
+2019-10-08 13:03:35.5480|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css  
+2019-10-08 13:03:35.5669|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Kaylaa/dashboard in 3022.1463ms
+2019-10-08 13:03:35.6440|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/custom/fullcalendar/fullcalendar.bundle.css was not modified
+2019-10-08 13:03:35.7172|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3211.7892ms 200 text/html; charset=utf-8
+2019-10-08 13:03:35.7172|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 192.2939ms 304 text/css
+2019-10-08 13:03:35.8701|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/bootstrap/dist/css/bootstrap.min.css  
+2019-10-08 13:03:35.9045|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/users/100_12.jpg  
+2019-10-08 13:03:36.0158|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/bootstrap/dist/css/bootstrap.min.css was not modified
+2019-10-08 13:03:36.0510|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/media/users/100_12.jpg was not modified
+2019-10-08 13:03:36.0744|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 297.1851ms 304 text/css
+2019-10-08 13:03:36.0870|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 301.3319ms 304 image/jpeg
+2019-10-08 13:03:36.2228|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/users/300_25.jpg  
+2019-10-08 13:03:36.3458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/jquery/dist/jquery.js  
+2019-10-08 13:03:36.6976|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/jquery/dist/jquery.slim.js  
+2019-10-08 13:03:36.9000|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/media/users/300_25.jpg was not modified
+2019-10-08 13:03:36.9410|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/jquery/dist/jquery.slim.js was not modified
+2019-10-08 13:03:36.9568|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/jquery/dist/jquery.js was not modified
+2019-10-08 13:03:36.9802|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 840.4547ms 304 image/jpeg
+2019-10-08 13:03:37.0018|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 715.326ms 304 application/javascript
+2019-10-08 13:03:37.0848|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 863.3398ms 304 application/javascript
+2019-10-08 13:03:37.1071|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/fonts/line-awesome/line-awesome-v=1.1..woff2  
+2019-10-08 13:03:37.1071|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/custom/gmaps/gmaps.js  
+2019-10-08 13:03:37.1191|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/fonts/flaticon2/Flaticon2.woff  
+2019-10-08 13:03:37.1191|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/custom/gmaps/gmaps.js was not modified
+2019-10-08 13:03:37.1354|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/fonts/line-awesome/line-awesome-v=1.1..woff2 was not modified
+2019-10-08 13:03:37.1518|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.2478ms 304 application/javascript
+2019-10-08 13:03:37.1518|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/fonts/flaticon2/Flaticon2.woff was not modified
+2019-10-08 13:03:37.1949|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 144.9039ms 304 font/woff2
+2019-10-08 13:03:37.2620|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js  
+2019-10-08 13:03:37.2803|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 102.6936ms 304 application/font-woff
+2019-10-08 13:03:37.2803|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/datatables.net/js/jquery.dataTables.js  
+2019-10-08 13:03:37.3081|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/dashboard.js  
+2019-10-08 13:03:37.3419|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/datatables.net/js/jquery.dataTables.js was not modified
+2019-10-08 13:03:37.3830|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/js/demo1/pages/dashboard.js was not modified
+2019-10-08 13:03:37.5550|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/datatables.net-bs4/js/dataTables.bootstrap4.js  
+2019-10-08 13:03:37.5550|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 172.276ms 304 application/javascript
+2019-10-08 13:03:37.5730|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 175.2234ms 304 application/javascript
+2019-10-08 13:03:37.5730|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/datatables.net-bs4/js/dataTables.bootstrap4.js was not modified
+2019-10-08 13:03:37.6198|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/custom/fullcalendar/fullcalendar.bundle.js was not modified
+2019-10-08 13:03:37.6534|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/media/users/300_21.jpg  
+2019-10-08 13:03:37.6780|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/datatables.net-bs4/css/dataTables.bootstrap4.css  
+2019-10-08 13:03:37.6956|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/mylib/brand.js  
+2019-10-08 13:03:37.6956|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/datatables.net-bs4/css/dataTables.bootstrap4.css was not modified
+2019-10-08 13:03:37.7163|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 351.7118ms 304 application/javascript
+2019-10-08 13:03:37.7253|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1390.6656ms 304 application/javascript
+2019-10-08 13:03:37.7253|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.2127ms 304 text/css
+2019-10-08 13:03:37.7812|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /mylib/brand.js was not modified
+2019-10-08 13:03:37.7950|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/mylib/color.js  
+2019-10-08 13:03:37.8158|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 134.234ms 304 application/javascript
+2019-10-08 13:03:37.8214|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/mylib/country.js  
+2019-10-08 13:03:37.8401|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/mylib/category.js  
+2019-10-08 13:03:37.8401|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /mylib/color.js was not modified
+2019-10-08 13:03:37.8551|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /mylib/country.js was not modified
+2019-10-08 13:03:37.8673|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /mylib/category.js was not modified
+2019-10-08 13:03:37.9052|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 125.404ms 304 application/javascript
+2019-10-08 13:03:37.9560|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 67.9846ms 304 application/javascript
+2019-10-08 13:03:38.0089|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/media/users/300_21.jpg was not modified
+2019-10-08 13:03:38.0374|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 166.5226ms 304 application/javascript
+2019-10-08 13:03:38.0415|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1922.7981ms 304 image/jpeg
+2019-10-08 13:03:38.0415|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/bootstrap/dist/js/bootstrap.js  
+2019-10-08 13:03:38.0602|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/bootstrap/dist/js/bootstrap.js was not modified
+2019-10-08 13:03:38.4009|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1161.7342ms 304 application/javascript
+2019-10-08 13:03:47.1674|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/vendors/global/purify.js.map  
+2019-10-08 13:03:47.3941|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 98.401ms 404 
+2019-10-08 13:03:47.6646|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/library/bootstrap/dist/css/bootstrap.min.css.map  
+2019-10-08 13:03:48.0988|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/bootstrap/dist/css/bootstrap.min.css.map was not modified
+2019-10-08 13:03:48.3255|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 704.5873ms 304 text/plain
+2019-10-08 13:09:28.7989|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-10-08 13:09:31.2077|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-10-08 13:09:31.2859|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnGet - ModelState is Valid
+2019-10-08 13:09:31.8292|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 589.2573ms
+2019-10-08 13:09:32.1517|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3131.1944ms 200 text/html; charset=utf-8
+2019-10-08 13:09:32.2116|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-10-08 13:09:32.4256|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 109.725ms 404 
+2019-10-08 13:09:33.3479|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/assets/js/demo1/pages/login2-general.js  
+2019-10-08 13:09:33.4219|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 140.1021ms 404 
+2019-10-08 13:09:37.0154|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/?handler=Login application/x-www-form-urlencoded 293
+2019-10-08 13:09:37.0353|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution failed.
+2019-10-08 13:09:37.0577|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin http://localhost:5000 does not have permission to access the resource.
+2019-10-08 13:09:37.0577|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2019-10-08 13:09:37.0747|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing action /Index
+2019-10-08 13:09:37.2573|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executing handler method OnPostLoginAsync - ModelState is Valid
+2019-10-08 13:09:37.9965|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-10-08 13:09:38.2527|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.11-servicing-32099 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 
+2019-10-08 13:10:03.5579|ERROR|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'DB_9D9472_kaylaaDb' on server 'SQL5042.site4now.net'.
+2019-10-08 13:10:03.7218|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'KaylaaShop.Data.KaylaaDataContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2019-10-08 13:10:03.7991|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'KaylaaShop.Data.KaylaaDataContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2019-10-08 13:10:04.4386|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker|Executed action /Index in 27354.7862ms
+2019-10-08 13:10:04.5976|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-10-08 13:10:04.7244|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27730.3157ms 500 text/html; charset=utf-8
+2019-10-08 13:13:17.7596|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-10-08 13:13:42.8230|ERROR|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'DB_9D9472_kaylaaDb' on server 'SQL5042.site4now.net'.
+2019-10-08 13:13:43.0550|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'KaylaaShop.Data.KaylaaDataContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2019-10-08 13:13:43.1459|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'KaylaaShop.Data.KaylaaDataContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (53): The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2019-10-08 13:13:43.5315|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2019-10-08 13:13:43.5682|ERROR|Global exception logger|A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2019-10-08 13:27:54.9517|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-10-08 16:46:13.1725|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-10-08 17:08:02.6052|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.

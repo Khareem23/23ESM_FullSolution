@@ -1,0 +1,13 @@
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.runtimeconfig.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.runtimeconfig.dev.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Data.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\bin\Release\netcoreapp3.0\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.csproj.CopyComplete
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\MakeUpResidence\KaylaaShop.Data\obj\Release\netcoreapp3.0\KaylaaShop.Data.pdb

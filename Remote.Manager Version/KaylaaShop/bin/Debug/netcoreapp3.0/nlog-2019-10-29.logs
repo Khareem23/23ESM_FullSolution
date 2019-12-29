@@ -1,0 +1,14 @@
+2019-10-29 21:58:47.1305|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 21:58:54.3260|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 21:58:56.0327|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 21:59:39.9392|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 21:59:41.7364|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No type was specified for the decimal column 'AmountSold' on entity type 'ShoppingCartItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2019-10-29 21:59:51.0405|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 21:59:56.3001|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 21:59:56.8200|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 21:59:56.8318|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 21:59:56.8589|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 22:00:27.9659|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 22:00:32.1919|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from Product <generated>_3 in DbSet<Product> select [<generated>_3]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-10-29 22:00:41.3786|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-10-29 22:00:45.5225|WARN|Microsoft.EntityFrameworkCore.Query|Query: '(from Product x in DbSet<Product> where [x].shopId == __id_0 select [x]).Skip(__p_1).Take(__p_2)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.

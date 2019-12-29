@@ -1,0 +1,56 @@
+There are 2 users 
+
+The solution comprises 2 folders 
+
+- Shop Staff App  (uses  Sqlite )
+- Manager App (uses  Sql server)
+
+Both are Asp.net Core 3.0 using Identity Authentication System
+
+- Staff handles transactions related to Customers, Expenses and Sales which are found in their respective 
+table , displaying of products added via the manager App 
+
+- Manager handles 
+   - CRUD of Staffs
+   - Inventory ( CRUD products )
+   - Can View Orders with Sales coming from every shop 
+etc 
+
+
+Core Operations 
+
+- Sales operation ( Shop App ) : when this happen, a record is created in shoppingCart and 
+ShoppingcartItem and the quantity of products sold is subtracted from the inventory ( Product Table ). 
+
+
+- Stocking/Updating of Products (Manager App) : Product Table handles this, a record is created and 
+restocking some properties of product are updated including quantity available
+
+
+NB : All the functions of the system are developed and tested Ok
+
+** The 2 Databases have the same schema
+
+TODO 
+
+Synchronization of data in such a way that there won't be inconsistent data in 
+both databases ( Sqlite tracking changes & Updating sqlserver and Vice versa ) 
+
+
+
+There is a scenario where sales are made at a shop , and the shop has not sync with Manager App 
+before Manager restock. This will lead to inconsistent quantity available in both ends 
+if some checks are not implemented
+
+
+The Key Data we want to sync  are found in the following tables
+
+- Products Table 
+- ShoppingCart 
+- ShoppingCartItem Table
+
+I can repeat the codebase for the other tables ( expenses , customers etc ) so i wil be glad if you can
+Comment some key part of the code 
+
+
+Thanks Boss 

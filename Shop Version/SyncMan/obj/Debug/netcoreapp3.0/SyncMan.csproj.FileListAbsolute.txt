@@ -1,0 +1,150 @@
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\appsettings.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.exe
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.deps.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.runtimeconfig.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.runtimeconfig.dev.json
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.pdb
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Dapper.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Extensions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Features.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SignalR.Client.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SignalR.Common.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.WebSockets.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Json.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Hosting.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Hosting.WindowsServices.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Core.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Stores.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Console.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Debug.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.EventLog.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.EventSource.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Net.Http.Headers.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\System.Data.SQLite.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\System.Diagnostics.EventLog.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\System.IO.Pipelines.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\System.ServiceProcess.ServiceController.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\linux-x64\native\netstandard2.0\SQLite.Interop.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\osx-x64\native\netstandard2.0\SQLite.Interop.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\netstandard2.0\SQLite.Interop.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\netstandard2.0\SQLite.Interop.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.csprojAssemblyReference.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.AssemblyInfoInputs.cache
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.AssemblyInfo.cs
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.csproj.CopyComplete
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.dll
+C:\APPDEV\PPROJ\23ESM_FullSolution\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.exe
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.runtimeconfig.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.runtimeconfig.dev.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\SyncMan.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Dapper.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Hosting.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Hosting.WindowsServices.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Console.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Microsoft.Net.Http.Headers.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\System.Data.SQLite.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\System.Diagnostics.EventLog.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\System.IO.Pipelines.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\System.ServiceProcess.ServiceController.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\linux-x64\native\netstandard2.0\SQLite.Interop.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\osx-x64\native\netstandard2.0\SQLite.Interop.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\netstandard2.0\SQLite.Interop.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\netstandard2.0\SQLite.Interop.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.csproj.CopyComplete
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\2 - YemisCopy_SyncVersion\Shop Version\SyncMan\obj\Debug\netcoreapp3.0\SyncMan.pdb

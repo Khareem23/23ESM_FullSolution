@@ -1,0 +1,17 @@
+C:\MyProjects_C\KaylaaShop\KaylaaShop.Core\bin\Release\netcoreapp2.1\KaylaaShop.Core.deps.json
+C:\MyProjects_C\KaylaaShop\KaylaaShop.Core\bin\Release\netcoreapp2.1\KaylaaShop.Core.dll
+C:\MyProjects_C\KaylaaShop\KaylaaShop.Core\bin\Release\netcoreapp2.1\KaylaaShop.Core.pdb
+C:\MyProjects_C\KaylaaShop\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.csprojAssemblyReference.cache
+C:\MyProjects_C\KaylaaShop\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.csproj.CoreCompileInputs.cache
+C:\MyProjects_C\KaylaaShop\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.AssemblyInfoInputs.cache
+C:\MyProjects_C\KaylaaShop\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.AssemblyInfo.cs
+C:\MyProjects_C\KaylaaShop\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.dll
+C:\MyProjects_C\KaylaaShop\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM-KaylaBeau\KaylaaShop.Core\bin\Release\netcoreapp2.1\KaylaaShop.Core.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM-KaylaBeau\KaylaaShop.Core\bin\Release\netcoreapp2.1\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM-KaylaBeau\KaylaaShop.Core\bin\Release\netcoreapp2.1\KaylaaShop.Core.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM-KaylaBeau\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM-KaylaBeau\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM-KaylaBeau\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM-KaylaBeau\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM-KaylaBeau\KaylaaShop.Core\obj\Release\netcoreapp2.1\KaylaaShop.Core.pdb

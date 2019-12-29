@@ -1,0 +1,8 @@
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM1.0 - KaylaBeau\KaylaaShop.Infastructure\bin\Debug\netcoreapp2.2\KaylaaShop.Infastructure.deps.json
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM1.0 - KaylaBeau\KaylaaShop.Infastructure\bin\Debug\netcoreapp2.2\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM1.0 - KaylaBeau\KaylaaShop.Infastructure\bin\Debug\netcoreapp2.2\KaylaaShop.Infastructure.pdb
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM1.0 - KaylaBeau\KaylaaShop.Infastructure\obj\Debug\netcoreapp2.2\KaylaaShop.Infastructure.csprojAssemblyReference.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM1.0 - KaylaBeau\KaylaaShop.Infastructure\obj\Debug\netcoreapp2.2\KaylaaShop.Infastructure.AssemblyInfoInputs.cache
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM1.0 - KaylaBeau\KaylaaShop.Infastructure\obj\Debug\netcoreapp2.2\KaylaaShop.Infastructure.AssemblyInfo.cs
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM1.0 - KaylaBeau\KaylaaShop.Infastructure\obj\Debug\netcoreapp2.2\KaylaaShop.Infastructure.dll
+C:\Users\Khareem_Win_Usr\Documents\Visual Studio 2019\ESM1.0 - KaylaBeau\KaylaaShop.Infastructure\obj\Debug\netcoreapp2.2\KaylaaShop.Infastructure.pdb

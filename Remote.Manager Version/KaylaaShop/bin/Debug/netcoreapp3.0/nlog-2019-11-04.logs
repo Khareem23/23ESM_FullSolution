@@ -1,0 +1,10 @@
+2019-11-04 15:11:56.3295|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2019-11-04 15:11:56.9635|ERROR|Global exception logger|The LINQ expression 'Where<ProductBrand>(
+    source: DbSet<ProductBrand>, 
+    predicate: (p) => p.GetType().GetProperty("Name").GetValue(p).Equals((Unhandled parameter: __name_0)))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2019-11-04 16:09:29.6194|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2019-11-04 16:09:29.9283|ERROR|Global exception logger|Unable to cast object of type 'System.Func`2[Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry,System.Int32]' to type 'System.Func`2[Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry,System.Object]'.
+2019-11-04 16:10:00.3779|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2019-11-04 16:10:00.5415|ERROR|Global exception logger|Unable to cast object of type 'System.Func`2[Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry,System.Int32]' to type 'System.Func`2[Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry,System.Object]'.
+2019-11-04 16:38:33.9629|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request.
+2019-11-04 16:38:34.2132|ERROR|Global exception logger|Unable to resolve service for type 'KaylaaShop.Data.IKaylaaRepository`1[KaylaaShop.Core.ServerNotifitcation]' while attempting to activate 'KaylaaShop.Pages.Kaylaa.InventoryModel'.

@@ -1,0 +1,381 @@
+﻿@page
+@model KaylaaShop.Pages.Kaylaa.OrdersModel
+@using Microsoft.AspNetCore.Identity;
+@using Microsoft.AspNetCore.Http;
+
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+
+@{
+    ViewData["Title"] = "Orders";
+    Layout = "~/Pages/Shared/_LayoutMain.cshtml";
+}
+
+
+@if (User.Identity.IsAuthenticated && User.IsInRole("AdminStaff"))
+{
+
+    <div class="row">
+        <div class="col-xl-12">
+            <div id="viewAllOrder" class="kt-portlet kt-portlet--mobile">
+
+
+                <div class="kt-portlet__head kt-portlet__head--lg deepBlueBack">
+                    <div class="kt-portlet__head-label">
+                        <span class="kt-portlet__head-icon">
+                            <i class="flaticon-calendar"></i>
+                        </span>
+                        <h2 class="kt-portlet__head-title kt-font-primary">
+                            All Sales Orders
+
+                        </h2>
+
+
+                    </div>
+
+                    <div class="kt-portlet__head-toolbar">
+
+                        <div class="kt-portlet__head-actions">
+                            <div class="row mt-4">
+                                <div class="form-group">
+                                    <select id="shopId" asp-items="Model.allShops" class="form-control deepBlueBack whiteFont">
+                                        <option value=""> Select Shop </option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <input id="serverUrl" type="hidden" value="@Configuration.GetSection("ServerRoot")["HostUrl"]" />
+
+                </div>
+
+                <div class="kt-portlet__body">
+                    <!--begin: Datatable -->
+                    <table class="table" id="allOrderTable">
+                        <tr></tr>
+                    </table>
+                    <!--end: Datatable -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal_order" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header deepBlueBack">
+                    <h5 class="modal-title whiteFont" id="exampleModalLabel">Get Order Items - <span id="orderIdModal"> </span> </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+
+                        <thead class="deepBlueBack whiteFont">
+                            <tr>
+                                <th> S/N </th>
+                                <th>Product Name </th>
+                                <th>Amount Sold </th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody id="allItemTable">
+                            
+                        </tbody>
+                           
+
+                    </table>
+
+                </div>
+                <div id="statusParent_order" style="display:none" class="alert alert-success my-alert" role="alert">
+                    <div id="status_order" class="alert-text"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnClose_order" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    @*<button id="btnUpdateOrder" type="button" class="btn btn-primary"> View Order Item </button>*@
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    @section Scripts
+{
+        <environment include="Development">
+            <script src="~/library/datatables.net/js/jquery.dataTables.js"></script>
+            <script src="~/library/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+            <link href="~/library/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+        </environment>
+
+        <environment exclude="Development">
+            <script src="~/library/datatables.net/js/jquery.dataTables.js"></script>
+            <script src="~/library/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+            <link href="~/library/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+        </environment>
+
+        <script>
+
+            var ServerRoot = $("#serverUrl").val();
+
+            var orderTbl = $('#allItemTable');
+
+            $(document).ready(function () {
+
+                GetAllOrder();
+
+                $(document).on('click', '#btnClose_order', ClearTable);
+
+                $(document).on('click', '#editOrder', editOrder);
+
+                $('select').on('change', getShopOrders)
+
+
+            })
+
+
+            var getShopOrders = function () {
+
+
+                $("#allOrderTable").dataTable().fnDestroy();
+
+                var shopId = $("#shopId").val();
+
+                $.ajax(`${ServerRoot}api/order/getorder/${shopId}`, { method: "get" })
+                    .then(function (resp) {
+
+                        console.log("ordres for shop:", resp);
+
+                        $("#allOrderTable").dataTable({
+                            "scrollX": true,
+                            "data": resp,
+                            "columns": [
+
+                                { "title": "Order Date", "data": "salesdate" },
+
+                                {
+                                    "title": "Customer Name",
+                                    "data": "customerName",
+                                    "render": function (data) {
+                                        return `<strong> ${data}  </strong>`
+                                    }
+                                },
+                                {
+                                    "title": "Order ID",
+                                    "data": "shoppingCartId",
+                                    "render": function (data) {
+                                        return `<strong> ${data}  </strong>`
+                                    }
+                                },
+                                { "title": "Order Price", "data": "totalPrice" },
+                                { "title": "Order Quantity", "data": "totalQuantity" },
+                                { "title": "Order Profit", "data": "totalProfit" },
+
+                                {
+                                    "title": "Staff Name",
+                                    "data": "staffName",
+                                    "render": function (data) {
+                                        return `<strong> ${data}  </strong>`
+                                    }
+                                },
+                                {
+                                    "title": "Shop Number",
+                                    "data": "shopId"
+                                },
+                                {
+                                    "title": "View",
+                                    "data": "shoppingCartId"
+                                }
+
+                            ],
+
+                            "columnDefs":
+                                [
+                                    {
+                                        "targets": 8,
+
+                                        "render": function (data) {
+                                            var update = `<button id="editOrder" data-id="${data}" class="btn btn-primary btn-sm mr-2" data-toggle="modal" data-target="#modal_order"><i class="fa fa-2 fa-edit"></i></button>`
+
+
+                                            return update;
+                                        }
+
+                                    }
+
+
+                                ]
+                        })
+
+
+
+
+                    });
+            }
+
+            var ClearTable = function () {
+                console.log("Clear Fired!");
+                $('#allItemTable').empty();
+            }
+
+
+
+            var GetAllOrder = function () {
+
+                $.ajax(`${ServerRoot}api/order`, { method: "get" })
+                    .then(function (resp) {
+
+                        console.log(resp);
+                        $("#allOrderTable").dataTable({
+                            "scrollX": true,
+                            "data": resp,
+                            "columns": [
+
+                                { "title": "Order Date", "data": "salesdate" },
+
+                                {
+                                    "title": "Customer Name",
+                                    "data": "customerName",
+                                    "render": function (data) {
+                                        return `<strong> ${data}  </strong>`
+                                    }
+                                },
+                                {
+                                    "title": "Order ID",
+                                    "data": "shoppingCartId",
+                                    "render": function (data) {
+                                        return `<strong> ${data}  </strong>`
+                                    }
+                                },
+                                { "title": "Order Price", "data": "totalPrice" },
+                                { "title": "Order Quantity", "data": "totalQuantity" },
+                                { "title": "Order Profit", "data": "totalProfit" },
+
+                                {
+                                    "title": "Staff Name",
+                                    "data": "staffName",
+                                    "render": function (data) {
+                                        return `<strong> ${data}  </strong>`
+                                    }
+                                },
+                                {
+                                    "title": "Shop Number",
+                                    "data": "shopId"
+                                },
+
+                                {
+                                    "title": "View",
+                                    "data": "shoppingCartId"
+                                }
+
+                            ],
+
+                            "columnDefs":
+                                [
+                                    {
+                                        "targets": 8,
+
+                                        "render": function (data) {
+                                            var update = `<button id="editOrder" data-id="${data}" class="btn btn-primary btn-sm mr-2" data-toggle="modal" data-target="#modal_order"><i class="fa fa-2 fa-edit"></i></button>`
+
+
+                                            return update;
+                                        }
+
+                                    }
+
+
+                                ]
+                        })
+                    });
+
+
+
+            }
+
+
+
+            // Binding Data to Editproduct Modal Form
+            var editOrder = function () {
+
+                $("#orderIdModal").html();
+                var btnEdit = $(this);
+                var orderId = btnEdit.attr('data-id');
+
+                $("#orderIdModal").html(`${orderId}`);
+
+                $.ajax(`${ServerRoot}api/order/${orderId}`, { method: "get" })
+                    .then(resp => {
+                        console.log("Single Order", resp);
+
+                        bindAllOrdersToTable(resp);
+
+                    }).catch(err => {
+
+
+                    })
+
+
+
+            }
+
+
+            var bindAllOrdersToTable = function (arrayData) {
+
+                var orderTbl = document.getElementById("allItemTable");
+
+
+                arrayData.forEach((data, idx) => {
+                    buildOrderRow(data, idx);
+                });
+
+
+            }
+
+            var buildOrderRow = function (data, idx_order) {
+
+                orderTbl.append(`
+                                    <tr>
+                                                <td>${idx_order + 1} </td>
+                                                <td>${data.productName} </td>
+                                                <td>${data.productCost} </td>
+                                                <td>${data.productQty} </td>
+                                                
+
+                                        </tr>
+                                `);
+
+
+            }
+
+        </script>
+
+    }
+
+}
+else
+{
+   //@RedirectToPage(../accessdenied"));
+  
+   // @Redirect("../accessdenied");
+}
+
+
+
+
+
+
+
+
+

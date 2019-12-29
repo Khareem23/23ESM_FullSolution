@@ -1,0 +1,619 @@
+2019-11-06 00:00:21.9386|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-11-06 00:00:25.5519|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence) in 35634.6841ms
+2019-11-06 00:00:25.6019|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence)'
+2019-11-06 00:00:25.6542|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 36155.4198ms 200 application/json; charset=utf-8
+2019-11-06 00:02:03.4448|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5001/api/customer application/json 129
+2019-11-06 00:02:03.4965|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence)'
+2019-11-06 00:02:03.5670|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "Customer", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(KaylaaShop.Core.Customer) on controller KaylaaShop.Pages.Api.CustomerController (MakeupResidence).
+2019-11-06 00:02:12.7378|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p11='?', @p0='?', @p1='?' (Size = 13), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (Size = 3), @p7='?' (Size = 13), @p8='?' (Size = 4), @p9='?' (Size = 10), @p10='?'], CommandType='Text', CommandTimeout='30']
+UPDATE "Customers" SET "DateSynced" = @p0, "Name" = @p1, "SyncId" = @p2, "SyncStatus" = @p3, "SyncTrackId" = @p4, "UnSyncedEvents" = @p5, "address" = @p6, "email" = @p7, "gender" = @p8, "phoneNumber" = @p9, "shopId" = @p10
+WHERE "Id" = @p11;
+SELECT changes();
+2019-11-06 00:08:28.9393|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5001
+2019-11-06 00:08:29.4997|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2019-11-06 00:08:29.7778|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2019-11-06 00:08:29.8838|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop
+2019-11-06 00:08:36.1695|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/  
+2019-11-06 00:08:38.6451|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Index'
+2019-11-06 00:08:38.8905|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+2019-11-06 00:08:38.9747|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.IndexModel.OnGet - ModelState is Valid
+2019-11-06 00:08:39.0049|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-11-06 00:08:39.0586|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-11-06 00:08:39.0981|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-11-06 00:08:40.0953|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Index in 791.0349ms
+2019-11-06 00:08:40.2927|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/pages/login2-general.js  
+2019-11-06 00:08:40.3938|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Index'
+2019-11-06 00:08:40.4187|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 275.2242ms 404 
+2019-11-06 00:08:40.4560|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4374.8820000000005ms 200 text/html; charset=utf-8
+2019-11-06 00:08:42.1486|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/pages/login2-general.js  
+2019-11-06 00:08:42.2436|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 115.1662ms 404 
+2019-11-06 00:08:46.5892|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5001/?handler=Login application/x-www-form-urlencoded 286
+2019-11-06 00:08:46.6383|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Index'
+2019-11-06 00:08:46.7305|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+2019-11-06 00:08:46.9393|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.IndexModel.OnPostLoginAsync - ModelState is Valid
+2019-11-06 00:08:50.0317|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: MaxPoolSize=128 
+2019-11-06 00:08:52.0380|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Discriminator", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName", "a"."address", "a"."fullName", "a"."gaurantorName", "a"."gaurantorPhoneNumber", "a"."gender", "a"."shopId"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Discriminator" IN ('IdentityUser', 'staff') AND ((("a"."NormalizedEmail" = @__normalizedEmail_0) AND ("a"."NormalizedEmail" IS NOT NULL AND @__normalizedEmail_0 IS NOT NULL)) OR ("a"."NormalizedEmail" IS NULL AND @__normalizedEmail_0 IS NULL))
+LIMIT 2
+2019-11-06 00:08:53.0699|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE ("a"."UserId" = @__user_Id_0) AND @__user_Id_0 IS NOT NULL
+2019-11-06 00:08:53.5038|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__userId_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE ("a"."UserId" = @__userId_0) AND @__userId_0 IS NOT NULL
+2019-11-06 00:08:53.9049|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 12)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE (("a"."NormalizedName" = @__normalizedName_0) AND ("a"."NormalizedName" IS NOT NULL AND @__normalizedName_0 IS NOT NULL)) OR ("a"."NormalizedName" IS NULL AND @__normalizedName_0 IS NULL)
+LIMIT 1
+2019-11-06 00:08:54.0279|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE ("a"."RoleId" = @__role_Id_0) AND @__role_Id_0 IS NOT NULL
+2019-11-06 00:08:54.1737|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application signed in.
+2019-11-06 00:08:54.2718|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnPostLoginAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2019-11-06 00:08:54.3417|INFO|Microsoft.AspNetCore.Mvc.RedirectToRouteResult|Executing RedirectToPageResult, redirecting to dashboard.
+2019-11-06 00:08:54.4108|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Index in 7590.3158ms
+2019-11-06 00:08:54.5564|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Index'
+2019-11-06 00:08:54.6141|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 8017.8716ms 302 
+2019-11-06 00:08:54.6657|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/dashboard  
+2019-11-06 00:08:54.8211|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/dashboard'
+2019-11-06 00:08:55.1084|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/dashboard", action = "", controller = ""}. Executing page /dashboard
+2019-11-06 00:08:55.7392|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.Kaylaa.dashboardModel.OnGet - ModelState is Valid
+2019-11-06 00:08:55.8005|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-11-06 00:08:55.8623|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-11-06 00:08:55.9585|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-11-06 00:08:56.1991|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: MaxPoolSize=128 
+2019-11-06 00:08:56.4870|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Products" AS "p"
+WHERE "p"."quantityAvailable" < 1
+2019-11-06 00:08:56.6047|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Products" AS "p"
+2019-11-06 00:08:56.7830|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "ShoppingCarts" AS "s"
+2019-11-06 00:08:56.8955|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "c"
+2019-11-06 00:08:57.0050|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Discriminator" = 'staff'
+2019-11-06 00:08:57.3913|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__name_0='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."shopId"
+FROM "AspNetUsers" AS "a"
+WHERE ("a"."Discriminator" = 'staff') AND ((("a"."UserName" = @__name_0) AND ("a"."UserName" IS NOT NULL AND @__name_0 IS NOT NULL)) OR ("a"."UserName" IS NULL AND @__name_0 IS NULL))
+LIMIT 1
+2019-11-06 00:08:57.6956|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "s"."Id", "s"."ShopAddress", "s"."ShopName"
+FROM "shops" AS "s"
+WHERE ("s"."Id" = @__id_0) AND @__id_0 IS NOT NULL
+LIMIT 1
+2019-11-06 00:08:57.8931|INFO|Microsoft.AspNetCore.Session.DistributedSession|Accessing expired session, Key:30180a7b-1a66-37d0-c1a5-bdb5c1c0b593
+2019-11-06 00:08:58.5517|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /dashboard in 3372.0426ms
+2019-11-06 00:08:58.7627|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/dashboard'
+2019-11-06 00:08:59.2213|INFO|Microsoft.AspNetCore.Session.DistributedSession|Session started; Key:30180a7b-1a66-37d0-c1a5-bdb5c1c0b593, Id:fe386f82-7361-12ba-05f8-4c07949fd8f6
+2019-11-06 00:08:59.5471|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4681.6174ms 200 text/html; charset=utf-8
+2019-11-06 00:09:01.9910|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/country  
+2019-11-06 00:09:02.1261|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/category  
+2019-11-06 00:09:02.1772|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/brand  
+2019-11-06 00:09:02.2742|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CountryController.GetAll (MakeupResidence)'
+2019-11-06 00:09:02.2255|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/color  
+2019-11-06 00:09:02.3091|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CategoryController.GetAll (MakeupResidence)'
+2019-11-06 00:09:02.4055|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.BrandController.GetAll (MakeupResidence)'
+2019-11-06 00:09:02.4198|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Country", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.CountryController (MakeupResidence).
+2019-11-06 00:09:02.4473|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.ColorController.GetAll (MakeupResidence)'
+2019-11-06 00:09:02.9322|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Brand", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.BrandController (MakeupResidence).
+2019-11-06 00:09:02.8822|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Category", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.CategoryController (MakeupResidence).
+2019-11-06 00:09:03.0466|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name"
+FROM "ProductCountries" AS "p"
+2019-11-06 00:09:03.1492|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: MaxPoolSize=128 
+2019-11-06 00:09:03.0466|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Color", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.ColorController (MakeupResidence).
+2019-11-06 00:09:03.3992|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name"
+FROM "ProductCategories" AS "p"
+2019-11-06 00:09:03.9558|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name"
+FROM "ProductBrands" AS "p"
+2019-11-06 00:09:04.2827|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.ProductCountry, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 00:09:04.8071|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: MaxPoolSize=128 
+2019-11-06 00:09:05.1316|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.ProductBrand, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 00:09:05.4288|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.ProductCategory, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 00:09:05.5078|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name"
+FROM "ProductColors" AS "p"
+2019-11-06 00:09:05.6481|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CountryController.GetAll (MakeupResidence) in 2532.9725000000003ms
+2019-11-06 00:09:05.7775|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CategoryController.GetAll (MakeupResidence) in 2362.8622ms
+2019-11-06 00:09:05.8355|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CountryController.GetAll (MakeupResidence)'
+2019-11-06 00:09:05.8811|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.BrandController.GetAll (MakeupResidence) in 2710.2679000000003ms
+2019-11-06 00:09:05.9376|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CategoryController.GetAll (MakeupResidence)'
+2019-11-06 00:09:05.8102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.ProductColor, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 00:09:06.3219|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.BrandController.GetAll (MakeupResidence)'
+2019-11-06 00:09:06.6300|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4500.899600000001ms 200 application/json; charset=utf-8
+2019-11-06 00:09:06.1150|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4121.753900000001ms 200 application/json; charset=utf-8
+2019-11-06 00:09:06.9633|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 5100.231000000001ms 200 application/json; charset=utf-8
+2019-11-06 00:09:06.9007|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/Customer  
+2019-11-06 00:09:06.8893|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.ColorController.GetAll (MakeupResidence) in 3142.5343000000003ms
+2019-11-06 00:09:07.4919|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.ColorController.GetAll (MakeupResidence)'
+2019-11-06 00:09:07.6675|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Customer'
+2019-11-06 00:09:07.8851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 5543.3532000000005ms 200 application/json; charset=utf-8
+2019-11-06 00:09:07.9551|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Customer", action = "", controller = ""}. Executing page /Customer
+2019-11-06 00:09:07.9962|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.Kaylaa.CustomerModel.OnGet - ModelState is Valid
+2019-11-06 00:09:08.2064|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."Id", "s"."ShopAddress", "s"."ShopName"
+FROM "shops" AS "s"
+2019-11-06 00:09:08.2670|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-11-06 00:09:08.3716|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-11-06 00:09:08.4411|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-11-06 00:09:08.5766|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__name_0='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."shopId"
+FROM "AspNetUsers" AS "a"
+WHERE ("a"."Discriminator" = 'staff') AND ((("a"."UserName" = @__name_0) AND ("a"."UserName" IS NOT NULL AND @__name_0 IS NOT NULL)) OR ("a"."UserName" IS NULL AND @__name_0 IS NULL))
+LIMIT 1
+2019-11-06 00:09:08.6746|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "s"."Id", "s"."ShopAddress", "s"."ShopName"
+FROM "shops" AS "s"
+WHERE ("s"."Id" = @__id_0) AND @__id_0 IS NOT NULL
+LIMIT 1
+2019-11-06 00:09:09.6625|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Customer in 1513.2909ms
+2019-11-06 00:09:09.9783|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Customer'
+2019-11-06 00:09:10.8002|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3812.4753ms 200 text/html; charset=utf-8
+2019-11-06 00:09:10.9131|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/customer  
+2019-11-06 00:09:11.1817|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CustomerController.GetAll (MakeupResidence)'
+2019-11-06 00:09:11.2556|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Customer", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.CustomerController (MakeupResidence).
+2019-11-06 00:09:11.3405|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "c"."Id", "c"."DateSynced", "c"."Name", "c"."SyncId", "c"."SyncStatus", "c"."SyncTrackId", "c"."UnSyncedEvents", "c"."address", "c"."email", "c"."gender", "c"."phoneNumber", "c"."shopId"
+FROM "Customers" AS "c"
+2019-11-06 00:09:11.7927|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.Customer, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 00:09:12.0690|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CustomerController.GetAll (MakeupResidence) in 644.6748ms
+2019-11-06 00:09:12.2982|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CustomerController.GetAll (MakeupResidence)'
+2019-11-06 00:09:12.4816|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1502.5089ms 200 application/json; charset=utf-8
+2019-11-06 00:09:17.0213|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/customer/2  
+2019-11-06 00:09:17.1009|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CustomerController.GetCustomer (MakeupResidence)'
+2019-11-06 00:09:17.1490|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomer", controller = "Customer", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCustomer(Int32) on controller KaylaaShop.Pages.Api.CustomerController (MakeupResidence).
+2019-11-06 00:09:17.2625|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "c"."Id", "c"."DateSynced", "c"."Name", "c"."SyncId", "c"."SyncStatus", "c"."SyncTrackId", "c"."UnSyncedEvents", "c"."address", "c"."email", "c"."gender", "c"."phoneNumber", "c"."shopId"
+FROM "Customers" AS "c"
+WHERE ("c"."Id" = @__p_0) AND @__p_0 IS NOT NULL
+LIMIT 1
+2019-11-06 00:09:17.4953|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'KaylaaShop.Core.Customer'.
+2019-11-06 00:09:17.5537|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CustomerController.GetCustomer (MakeupResidence) in 369.5034ms
+2019-11-06 00:09:17.6837|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CustomerController.GetCustomer (MakeupResidence)'
+2019-11-06 00:09:17.7892|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 825.4521000000001ms 200 application/json; charset=utf-8
+2019-11-06 00:09:21.4187|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5001/api/customer application/json 130
+2019-11-06 00:09:21.5056|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence)'
+2019-11-06 00:09:21.5976|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "Customer", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(KaylaaShop.Core.Customer) on controller KaylaaShop.Pages.Api.CustomerController (MakeupResidence).
+2019-11-06 00:09:52.4910|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5001/api/customer application/json 130
+2019-11-06 00:09:52.5961|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence)'
+2019-11-06 00:09:52.7034|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "Customer", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(KaylaaShop.Core.Customer) on controller KaylaaShop.Pages.Api.CustomerController (MakeupResidence).
+2019-11-06 00:10:10.3752|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'KaylaaShop.Data.KaylaaDataContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText, SqliteParameter[] parameters)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2019-11-06 00:10:23.6888|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence) in 62048.129400000005ms
+2019-11-06 00:10:23.7566|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence)'
+2019-11-06 00:10:24.4030|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-11-06 00:10:24.4986|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 63103.2721ms 500 text/plain
+2019-11-06 00:10:27.5857|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'KaylaaShop.Data.KaylaaDataContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText, SqliteParameter[] parameters)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2019-11-06 00:10:44.6929|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence) in 51866.940500000004ms
+2019-11-06 00:10:52.1605|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence)'
+2019-11-06 00:10:55.1878|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.
+2019-11-06 00:10:55.3258|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 62771.668900000004ms 500 text/plain
+2019-11-06 00:11:58.5454|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5001/api/customer application/json 128
+2019-11-06 00:11:58.6075|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence)'
+2019-11-06 00:11:58.6657|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "Customer", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(KaylaaShop.Core.Customer) on controller KaylaaShop.Pages.Api.CustomerController (MakeupResidence).
+2019-11-06 00:12:06.6088|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p11='?', @p0='?', @p1='?' (Size = 13), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (Size = 3), @p7='?' (Size = 12), @p8='?' (Size = 4), @p9='?' (Size = 10), @p10='?'], CommandType='Text', CommandTimeout='30']
+UPDATE "Customers" SET "DateSynced" = @p0, "Name" = @p1, "SyncId" = @p2, "SyncStatus" = @p3, "SyncTrackId" = @p4, "UnSyncedEvents" = @p5, "address" = @p6, "email" = @p7, "gender" = @p8, "phoneNumber" = @p9, "shopId" = @p10
+WHERE "Id" = @p11;
+SELECT changes();
+2019-11-06 00:12:12.1392|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-11-06 00:12:14.7549|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence) in 15984.470500000001ms
+2019-11-06 00:12:16.5235|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence)'
+2019-11-06 00:12:16.5511|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 18022.5924ms 200 application/json; charset=utf-8
+2019-11-06 00:12:57.2814|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/Expenses  
+2019-11-06 00:12:57.4608|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Expenses'
+2019-11-06 00:12:57.6089|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Expenses", action = "", controller = ""}. Executing page /Expenses
+2019-11-06 00:12:57.6640|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.Kaylaa.ExpensesModel.OnGet - ModelState is Valid
+2019-11-06 00:12:57.7167|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-11-06 00:12:57.7873|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-11-06 00:12:57.8537|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-11-06 00:12:58.1644|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__name_0='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."shopId"
+FROM "AspNetUsers" AS "a"
+WHERE ("a"."Discriminator" = 'staff') AND ((("a"."UserName" = @__name_0) AND ("a"."UserName" IS NOT NULL AND @__name_0 IS NOT NULL)) OR ("a"."UserName" IS NULL AND @__name_0 IS NULL))
+LIMIT 1
+2019-11-06 00:12:58.2328|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "s"."Id", "s"."ShopAddress", "s"."ShopName"
+FROM "shops" AS "s"
+WHERE ("s"."Id" = @__id_0) AND @__id_0 IS NOT NULL
+LIMIT 1
+2019-11-06 00:12:58.5040|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Expenses in 708.0946ms
+2019-11-06 00:12:58.6153|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Expenses'
+2019-11-06 00:12:58.6771|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1388.7021ms 200 text/html; charset=utf-8
+2019-11-06 00:12:59.9342|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/expenses  
+2019-11-06 00:12:59.9795|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.ExpensesController.GetAll (MakeupResidence)'
+2019-11-06 00:13:00.0387|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Expenses", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.ExpensesController (MakeupResidence).
+2019-11-06 00:13:00.0874|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."DateSynced", "e"."Name", "e"."SyncId", "e"."SyncStatus", "e"."SyncTrackId", "e"."UnSyncedEvents", "e"."amount", "e"."date", "e"."shopId"
+FROM "Expenses" AS "e"
+2019-11-06 00:13:00.1439|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.Expenses, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 00:13:00.1957|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.ExpensesController.GetAll (MakeupResidence) in 120.4848ms
+2019-11-06 00:13:00.2174|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.ExpensesController.GetAll (MakeupResidence)'
+2019-11-06 00:13:00.2478|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 326.8629ms 200 application/json; charset=utf-8
+2019-11-06 00:13:22.8279|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5001/api/expenses application/json 71
+2019-11-06 00:13:23.0153|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.ExpensesController.Add (MakeupResidence)'
+2019-11-06 00:13:23.1703|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Add", controller = "Expenses", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(KaylaaShop.Core.Expenses) on controller KaylaaShop.Pages.Api.ExpensesController (MakeupResidence).
+2019-11-06 00:13:49.9939|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?', @p1='?' (Size = 4), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Expenses" ("DateSynced", "Name", "SyncId", "SyncStatus", "SyncTrackId", "UnSyncedEvents", "amount", "date", "shopId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT "Id"
+FROM "Expenses"
+WHERE changes() = 1 AND "Id" = last_insert_rowid();
+2019-11-06 00:14:03.9528|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-11-06 00:14:08.7531|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.ExpensesController.Add (MakeupResidence) in 40790.026000000005ms
+2019-11-06 00:14:10.5836|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.ExpensesController.Add (MakeupResidence)'
+2019-11-06 00:14:12.5809|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 49705.5944ms 200 application/json; charset=utf-8
+2019-11-06 00:15:23.2978|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/expenses/1  
+2019-11-06 00:15:23.3949|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.ExpensesController.GetExpenses (MakeupResidence)'
+2019-11-06 00:15:23.5659|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetExpenses", controller = "Expenses", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetExpenses(Int32) on controller KaylaaShop.Pages.Api.ExpensesController (MakeupResidence).
+2019-11-06 00:15:23.7977|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."DateSynced", "e"."Name", "e"."SyncId", "e"."SyncStatus", "e"."SyncTrackId", "e"."UnSyncedEvents", "e"."amount", "e"."date", "e"."shopId"
+FROM "Expenses" AS "e"
+WHERE ("e"."Id" = @__p_0) AND @__p_0 IS NOT NULL
+LIMIT 1
+2019-11-06 00:15:23.9006|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'KaylaaShop.Core.Expenses'.
+2019-11-06 00:15:23.9782|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.ExpensesController.GetExpenses (MakeupResidence) in 316.3277ms
+2019-11-06 00:15:24.0765|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.ExpensesController.GetExpenses (MakeupResidence)'
+2019-11-06 00:15:24.1359|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 809.0128000000001ms 200 application/json; charset=utf-8
+2019-11-06 00:15:30.7018|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5001/api/expenses application/json 77
+2019-11-06 00:15:30.9158|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.ExpensesController.Add (MakeupResidence)'
+2019-11-06 00:15:31.0308|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Add", controller = "Expenses", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(KaylaaShop.Core.Expenses) on controller KaylaaShop.Pages.Api.ExpensesController (MakeupResidence).
+2019-11-06 00:15:35.7477|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p9='?', @p0='?', @p1='?' (Size = 9), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?'], CommandType='Text', CommandTimeout='30']
+UPDATE "Expenses" SET "DateSynced" = @p0, "Name" = @p1, "SyncId" = @p2, "SyncStatus" = @p3, "SyncTrackId" = @p4, "UnSyncedEvents" = @p5, "amount" = @p6, "date" = @p7, "shopId" = @p8
+WHERE "Id" = @p9;
+SELECT changes();
+2019-11-06 00:15:42.1155|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-11-06 00:15:45.3719|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.ExpensesController.Add (MakeupResidence) in 11126.7436ms
+2019-11-06 00:15:49.4661|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.ExpensesController.Add (MakeupResidence)'
+2019-11-06 00:15:49.7029|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 18825.8314ms 200 application/json; charset=utf-8
+2019-11-06 11:29:16.0606|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5001
+2019-11-06 11:29:16.7650|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2019-11-06 11:29:17.4270|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2019-11-06 11:29:17.5113|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\APPDEV\PPROJ\23ESM_FullSolution\ShopVersion\KaylaaShop
+2019-11-06 11:29:24.5026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/  
+2019-11-06 11:29:25.5577|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 11:29:26.5616|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-11-06 11:29:27.4954|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Index'
+2019-11-06 11:29:28.6471|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+2019-11-06 11:29:30.9957|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.IndexModel.OnGet - ModelState is Valid
+2019-11-06 11:29:31.0518|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-11-06 11:29:31.1158|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-11-06 11:29:31.1558|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-11-06 11:29:32.3912|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Index in 3575.6618000000003ms
+2019-11-06 11:29:32.6265|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Index'
+2019-11-06 11:29:37.2910|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/login-2.css  
+2019-11-06 11:29:37.5978|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/header/menu/light.css  
+2019-11-06 11:29:37.7024|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/brand/dark.css  
+2019-11-06 11:29:37.8959|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 13404.323900000001ms 200 text/html; charset=utf-8
+2019-11-06 11:29:38.1010|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/login-2.css was not modified
+2019-11-06 11:29:38.3035|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/skins/brand/dark.css was not modified
+2019-11-06 11:29:38.5304|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/vendors.bundle.css  
+2019-11-06 11:29:38.8150|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/header/base/light.css  
+2019-11-06 11:29:39.2066|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4532.9767ms 304 text/css
+2019-11-06 11:29:39.3095|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4891.908ms 304 text/css
+2019-11-06 11:29:39.4201|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/vendors.bundle.css was not modified
+2019-11-06 11:29:39.8862|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/skins/header/base/light.css was not modified
+2019-11-06 11:29:40.0973|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/customstyle.css  
+2019-11-06 11:29:40.1495|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/style.bundle.css  
+2019-11-06 11:29:40.3015|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/css/demo1/skins/aside/dark.css  
+2019-11-06 11:29:40.3731|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/customstyle.css was not modified
+2019-11-06 11:29:40.4128|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/style.bundle.css was not modified
+2019-11-06 11:29:40.5458|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/skins/aside/dark.css was not modified
+2019-11-06 11:29:40.5742|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 694.1673000000001ms 304 text/css
+2019-11-06 11:29:40.6146|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 715.3592ms 304 text/css
+2019-11-06 11:29:40.5841|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2368.0957000000003ms 304 text/css
+2019-11-06 11:29:40.6418|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2787.3872ms 304 text/css
+2019-11-06 11:29:40.7097|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 903.7097ms 304 text/css
+2019-11-06 11:29:40.7742|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/scripts.bundle.js  
+2019-11-06 11:29:40.8027|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/pages/login2-general.js  
+2019-11-06 11:29:40.8541|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/kareempng 3.png  
+2019-11-06 11:29:40.7923|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/vendors.bundle.js  
+2019-11-06 11:29:41.0300|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/js/demo1/scripts.bundle.js was not modified
+2019-11-06 11:29:41.1314|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/css/demo1/skins/header/menu/light.css was not modified
+2019-11-06 11:29:41.2397|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /kareempng 3.png was not modified
+2019-11-06 11:29:41.3059|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/vendors.bundle.js was not modified
+2019-11-06 11:29:41.4026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 573.1754000000001ms 304 application/javascript
+2019-11-06 11:29:41.6010|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 11:29:41.7873|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 608.1761ms 304 image/png
+2019-11-06 11:29:42.1550|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 870.2305ms 304 application/javascript
+2019-11-06 11:29:42.6756|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/fonts/@fortawesome/fa-solid-900.woff2  
+2019-11-06 11:29:42.9834|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-11-06 11:29:43.1020|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/fonts/@fortawesome/fa-solid-900.woff2 was not modified
+2019-11-06 11:29:43.1573|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4011.3249ms 304 text/css
+2019-11-06 11:29:43.2865|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2426.4304ms 404 
+2019-11-06 11:29:43.3662|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1301.7959ms 304 font/woff2
+2019-11-06 11:29:43.7758|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/media/bg/shop_bg.jpg  
+2019-11-06 11:29:44.1086|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/media/bg/shop_bg.jpg was not modified
+2019-11-06 11:29:44.2025|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 945.5029000000001ms 304 image/jpeg
+2019-11-06 11:30:10.8000|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5001/?handler=Login application/x-www-form-urlencoded 243
+2019-11-06 11:30:10.8658|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 11:30:10.9968|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-11-06 11:30:11.1330|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Index'
+2019-11-06 11:30:11.3521|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+2019-11-06 11:30:11.4932|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.IndexModel.OnPostLoginAsync - ModelState is Valid
+2019-11-06 11:30:14.1889|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: MaxPoolSize=128 
+2019-11-06 11:30:16.5185|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 19)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Discriminator", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName", "a"."address", "a"."fullName", "a"."gaurantorName", "a"."gaurantorPhoneNumber", "a"."gender", "a"."shopId"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Discriminator" IN ('IdentityUser', 'staff') AND ((("a"."NormalizedEmail" = @__normalizedEmail_0) AND ("a"."NormalizedEmail" IS NOT NULL AND @__normalizedEmail_0 IS NOT NULL)) OR ("a"."NormalizedEmail" IS NULL AND @__normalizedEmail_0 IS NULL))
+LIMIT 2
+2019-11-06 11:30:17.1418|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE ("a"."UserId" = @__user_Id_0) AND @__user_Id_0 IS NOT NULL
+2019-11-06 11:30:17.2693|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__userId_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE ("a"."UserId" = @__userId_0) AND @__userId_0 IS NOT NULL
+2019-11-06 11:30:17.3298|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 12)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE (("a"."NormalizedName" = @__normalizedName_0) AND ("a"."NormalizedName" IS NOT NULL AND @__normalizedName_0 IS NOT NULL)) OR ("a"."NormalizedName" IS NULL AND @__normalizedName_0 IS NULL)
+LIMIT 1
+2019-11-06 11:30:17.3917|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE ("a"."RoleId" = @__role_Id_0) AND @__role_Id_0 IS NOT NULL
+2019-11-06 11:30:17.4494|INFO|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application signed in.
+2019-11-06 11:30:17.4769|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnPostLoginAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult.
+2019-11-06 11:30:17.5108|INFO|Microsoft.AspNetCore.Mvc.RedirectToRouteResult|Executing RedirectToPageResult, redirecting to dashboard.
+2019-11-06 11:30:17.5354|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Index in 6155.0986ms
+2019-11-06 11:30:17.5629|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Index'
+2019-11-06 11:30:17.6421|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 6822.3684ms 302 
+2019-11-06 11:30:17.7733|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/dashboard  
+2019-11-06 11:30:17.8152|WARN|Microsoft.AspNetCore.Session.SessionMiddleware|Error unprotecting the session cookie.
+2019-11-06 11:30:17.9187|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/dashboard'
+2019-11-06 11:30:17.9473|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/dashboard", action = "", controller = ""}. Executing page /dashboard
+2019-11-06 11:30:18.6196|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.Kaylaa.dashboardModel.OnGet - ModelState is Valid
+2019-11-06 11:30:18.6584|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-11-06 11:30:18.7066|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-11-06 11:30:18.7689|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-11-06 11:30:19.2680|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Products" AS "p"
+WHERE "p"."quantityAvailable" < 1
+2019-11-06 11:30:19.3819|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Products" AS "p"
+2019-11-06 11:30:19.5376|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "ShoppingCarts" AS "s"
+2019-11-06 11:30:19.7090|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Customers" AS "c"
+2019-11-06 11:30:19.8710|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Discriminator" = 'staff'
+2019-11-06 11:30:20.4696|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__name_0='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."shopId"
+FROM "AspNetUsers" AS "a"
+WHERE ("a"."Discriminator" = 'staff') AND ((("a"."UserName" = @__name_0) AND ("a"."UserName" IS NOT NULL AND @__name_0 IS NOT NULL)) OR ("a"."UserName" IS NULL AND @__name_0 IS NULL))
+LIMIT 1
+2019-11-06 11:30:20.5378|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "s"."Id", "s"."ShopAddress", "s"."ShopName"
+FROM "shops" AS "s"
+WHERE ("s"."Id" = @__id_0) AND @__id_0 IS NOT NULL
+LIMIT 1
+2019-11-06 11:30:21.3804|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/library/bootstrap/dist/css/bootstrap.min.css  
+2019-11-06 11:30:21.7933|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/media/users/100_12.jpg  
+2019-11-06 11:30:22.0230|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/media/users/300_25.jpg  
+2019-11-06 11:30:22.2383|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/media/users/100_12.jpg was not modified
+2019-11-06 11:30:22.2933|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /dashboard in 3864.0539000000003ms
+2019-11-06 11:30:22.3574|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/library/jquery/dist/jquery.js  
+2019-11-06 11:30:22.4122|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 934.5043000000001ms 304 image/jpeg
+2019-11-06 11:30:22.4538|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/dashboard'
+2019-11-06 11:30:22.5561|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/jquery/dist/jquery.js was not modified
+2019-11-06 11:30:22.6360|INFO|Microsoft.AspNetCore.Session.DistributedSession|Session started; Key:d7ee7d0a-b633-bfe3-e4e8-62f8f4c3d791, Id:4d553ebd-f919-e708-a6d4-5fa412f4cde7
+2019-11-06 11:30:22.6662|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 354.834ms 304 application/javascript
+2019-11-06 11:30:22.6922|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/media/users/300_25.jpg was not modified
+2019-11-06 11:30:22.9231|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css  
+2019-11-06 11:30:23.0699|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/library/jquery/dist/jquery.slim.js  
+2019-11-06 11:30:23.1114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4961.3757000000005ms 200 text/html; charset=utf-8
+2019-11-06 11:30:23.1415|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1409.9166ms 304 image/jpeg
+2019-11-06 11:30:23.1745|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/jquery/dist/jquery.slim.js was not modified
+2019-11-06 11:30:23.3199|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/custom/fullcalendar/fullcalendar.bundle.css was not modified
+2019-11-06 11:30:23.4432|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 476.1148ms 304 application/javascript
+2019-11-06 11:30:23.5881|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/library/bootstrap/dist/js/bootstrap.js  
+2019-11-06 11:30:23.6593|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/js/demo1/pages/dashboard.js  
+2019-11-06 11:30:23.7810|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/custom/fullcalendar/fullcalendar.bundle.js  
+2019-11-06 11:30:23.8952|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/js/demo1/pages/dashboard.js was not modified
+2019-11-06 11:30:23.9392|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/custom/fullcalendar/fullcalendar.bundle.js was not modified
+2019-11-06 11:30:23.9940|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/library/datatables.net/js/jquery.dataTables.js  
+2019-11-06 11:30:24.0128|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 550.9961000000001ms 304 application/javascript
+2019-11-06 11:30:24.0234|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 432.9216ms 304 application/javascript
+2019-11-06 11:30:24.3239|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/bootstrap/dist/js/bootstrap.js was not modified
+2019-11-06 11:30:24.3795|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/datatables.net/js/jquery.dataTables.js was not modified
+2019-11-06 11:30:24.4167|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/library/datatables.net-bs4/css/dataTables.bootstrap4.css  
+2019-11-06 11:30:24.4290|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/library/datatables.net-bs4/js/dataTables.bootstrap4.js  
+2019-11-06 11:30:24.5508|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 509.1028ms 304 application/javascript
+2019-11-06 11:30:24.6115|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1172.8019000000002ms 304 application/javascript
+2019-11-06 11:30:24.6547|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/datatables.net-bs4/css/dataTables.bootstrap4.css was not modified
+2019-11-06 11:30:24.6599|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/mylib/color.js  
+2019-11-06 11:30:24.7088|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/datatables.net-bs4/js/dataTables.bootstrap4.js was not modified
+2019-11-06 11:30:24.7478|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 461.5753ms 304 text/css
+2019-11-06 11:30:24.7714|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /mylib/color.js was not modified
+2019-11-06 11:30:24.7347|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/mylib/brand.js  
+2019-11-06 11:30:24.8055|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1994.1902ms 304 text/css
+2019-11-06 11:30:24.8825|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/mylib/category.js  
+2019-11-06 11:30:24.8825|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 245.5848ms 304 application/javascript
+2019-11-06 11:30:24.8708|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 718.0068ms 304 application/javascript
+2019-11-06 11:30:24.9427|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /mylib/category.js was not modified
+2019-11-06 11:30:24.9114|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /mylib/brand.js was not modified
+2019-11-06 11:30:24.9114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/custom/gmaps/gmaps.js  
+2019-11-06 11:30:25.0050|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 191.9237ms 304 application/javascript
+2019-11-06 11:30:25.0335|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 371.7737ms 304 application/javascript
+2019-11-06 11:30:25.0665|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/custom/gmaps/gmaps.js was not modified
+2019-11-06 11:30:24.9345|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /library/bootstrap/dist/css/bootstrap.min.css was not modified
+2019-11-06 11:30:25.1432|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/mylib/country.js  
+2019-11-06 11:30:25.1883|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 254.9247ms 304 application/javascript
+2019-11-06 11:30:25.2603|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3859.0919000000004ms 304 text/css
+2019-11-06 11:30:25.2863|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /mylib/country.js was not modified
+2019-11-06 11:30:25.5459|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/media/users/300_21.jpg  
+2019-11-06 11:30:25.7254|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 240.1004ms 304 application/javascript
+2019-11-06 11:30:25.7933|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/media/users/300_21.jpg was not modified
+2019-11-06 11:30:26.0973|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 556.6539ms 304 image/jpeg
+2019-11-06 11:30:26.4546|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/fonts/line-awesome/line-awesome-v=1.1..woff2  
+2019-11-06 11:30:26.5899|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/fonts/flaticon2/Flaticon2.woff  
+2019-11-06 11:30:26.8491|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/fonts/line-awesome/line-awesome-v=1.1..woff2 was not modified
+2019-11-06 11:30:27.0863|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/fonts/flaticon2/Flaticon2.woff was not modified
+2019-11-06 11:30:27.1465|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 747.0309000000001ms 304 font/woff2
+2019-11-06 11:30:27.1843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/color  
+2019-11-06 11:30:27.2616|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 645.9547ms 304 application/font-woff
+2019-11-06 11:30:27.3470|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/category  
+2019-11-06 11:30:27.5083|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.ColorController.GetAll (MakeupResidence)'
+2019-11-06 11:30:27.6745|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/country  
+2019-11-06 11:30:27.8829|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/brand  
+2019-11-06 11:30:27.9697|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CountryController.GetAll (MakeupResidence)'
+2019-11-06 11:30:28.4397|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Color", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.ColorController (MakeupResidence).
+2019-11-06 11:30:28.5456|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Country", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.CountryController (MakeupResidence).
+2019-11-06 11:30:28.5960|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.BrandController.GetAll (MakeupResidence)'
+2019-11-06 11:30:28.7356|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name"
+FROM "ProductColors" AS "p"
+2019-11-06 11:30:28.9976|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Brand", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.BrandController (MakeupResidence).
+2019-11-06 11:30:29.0716|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CategoryController.GetAll (MakeupResidence)'
+2019-11-06 11:30:29.1153|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: MaxPoolSize=128 
+2019-11-06 11:30:29.2071|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.ProductColor, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 11:30:29.2251|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: MaxPoolSize=128 
+2019-11-06 11:30:29.2433|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name"
+FROM "ProductCountries" AS "p"
+2019-11-06 11:30:29.2433|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Category", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.CategoryController (MakeupResidence).
+2019-11-06 11:30:29.4897|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name"
+FROM "ProductBrands" AS "p"
+2019-11-06 11:30:29.6325|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.0.0 initialized 'KaylaaDataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: MaxPoolSize=128 
+2019-11-06 11:30:29.7361|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.ProductCountry, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 11:30:29.7986|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.ColorController.GetAll (MakeupResidence) in 1005.5495000000001ms
+2019-11-06 11:30:29.8858|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.ProductBrand, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 11:30:29.9935|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CountryController.GetAll (MakeupResidence) in 1232.7377000000001ms
+2019-11-06 11:30:30.0361|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.ColorController.GetAll (MakeupResidence)'
+2019-11-06 11:30:30.1098|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.BrandController.GetAll (MakeupResidence) in 908.1687000000001ms
+2019-11-06 11:30:30.2731|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CountryController.GetAll (MakeupResidence)'
+2019-11-06 11:30:30.3510|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3097.4213ms 200 application/json; charset=utf-8
+2019-11-06 11:30:30.4987|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.BrandController.GetAll (MakeupResidence)'
+2019-11-06 11:30:30.5423|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3122.4585ms 200 application/json; charset=utf-8
+2019-11-06 11:30:30.7719|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3233.8149000000003ms 200 application/json; charset=utf-8
+2019-11-06 11:30:30.9343|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."Name"
+FROM "ProductCategories" AS "p"
+2019-11-06 11:30:31.0511|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.ProductCategory, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 11:30:31.1185|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CategoryController.GetAll (MakeupResidence) in 1687.0597ms
+2019-11-06 11:30:31.2227|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CategoryController.GetAll (MakeupResidence)'
+2019-11-06 11:30:31.3889|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4191.1765000000005ms 200 application/json; charset=utf-8
+2019-11-06 11:30:43.6514|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/Customer  
+2019-11-06 11:30:43.9498|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '/Customer'
+2019-11-06 11:30:44.1614|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Route matched with {page = "/Customer", action = "", controller = ""}. Executing page /Customer
+2019-11-06 11:30:44.2628|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing handler method KaylaaShop.Pages.Kaylaa.CustomerModel.OnGet - ModelState is Valid
+2019-11-06 11:30:44.5538|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "s"."Id", "s"."ShopAddress", "s"."ShopName"
+FROM "shops" AS "s"
+2019-11-06 11:30:44.6253|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed handler method OnGet, returned result .
+2019-11-06 11:30:44.7539|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executing an implicit handler method - ModelState is Valid
+2019-11-06 11:30:44.8158|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2019-11-06 11:30:45.0515|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__name_0='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+SELECT "a"."shopId"
+FROM "AspNetUsers" AS "a"
+WHERE ("a"."Discriminator" = 'staff') AND ((("a"."UserName" = @__name_0) AND ("a"."UserName" IS NOT NULL AND @__name_0 IS NOT NULL)) OR ("a"."UserName" IS NULL AND @__name_0 IS NULL))
+LIMIT 1
+2019-11-06 11:30:45.0977|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "s"."Id", "s"."ShopAddress", "s"."ShopName"
+FROM "shops" AS "s"
+WHERE ("s"."Id" = @__id_0) AND @__id_0 IS NOT NULL
+LIMIT 1
+2019-11-06 11:30:45.9663|INFO|Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker|Executed page /Customer in 1357.3979000000002ms
+2019-11-06 11:30:46.1968|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '/Customer'
+2019-11-06 11:30:46.3401|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2619.4302000000002ms 200 text/html; charset=utf-8
+2019-11-06 11:30:47.3361|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/assets/vendors/global/fonts/flaticon/Flaticon.woff  
+2019-11-06 11:30:47.4384|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /assets/vendors/global/fonts/flaticon/Flaticon.woff was not modified
+2019-11-06 11:30:47.5462|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 156.5581ms 304 application/font-woff
+2019-11-06 11:30:47.8842|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/customer  
+2019-11-06 11:30:47.9498|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CustomerController.GetAll (MakeupResidence)'
+2019-11-06 11:30:47.9997|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Customer", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KaylaaShop.Pages.Api.CustomerController (MakeupResidence).
+2019-11-06 11:30:48.0701|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "c"."Id", "c"."DateSynced", "c"."Name", "c"."SyncId", "c"."SyncStatus", "c"."SyncTrackId", "c"."UnSyncedEvents", "c"."address", "c"."email", "c"."gender", "c"."phoneNumber", "c"."shopId"
+FROM "Customers" AS "c"
+2019-11-06 11:30:48.4321|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[KaylaaShop.Core.Customer, KaylaaShop.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-11-06 11:30:48.8123|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CustomerController.GetAll (MakeupResidence) in 577.5518000000001ms
+2019-11-06 11:30:49.1243|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CustomerController.GetAll (MakeupResidence)'
+2019-11-06 11:30:49.3618|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1439.689ms 200 application/json; charset=utf-8
+2019-11-06 11:30:52.8334|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5001/api/customer/2  
+2019-11-06 11:30:52.9294|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CustomerController.GetCustomer (MakeupResidence)'
+2019-11-06 11:30:53.0662|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomer", controller = "Customer", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCustomer(Int32) on controller KaylaaShop.Pages.Api.CustomerController (MakeupResidence).
+2019-11-06 11:30:53.2076|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__p_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "c"."Id", "c"."DateSynced", "c"."Name", "c"."SyncId", "c"."SyncStatus", "c"."SyncTrackId", "c"."UnSyncedEvents", "c"."address", "c"."email", "c"."gender", "c"."phoneNumber", "c"."shopId"
+FROM "Customers" AS "c"
+WHERE ("c"."Id" = @__p_0) AND @__p_0 IS NOT NULL
+LIMIT 1
+2019-11-06 11:30:53.3818|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'KaylaaShop.Core.Customer'.
+2019-11-06 11:30:53.8729|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CustomerController.GetCustomer (MakeupResidence) in 353.9903ms
+2019-11-06 11:30:53.9364|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CustomerController.GetCustomer (MakeupResidence)'
+2019-11-06 11:30:53.9846|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1198.3985ms 200 application/json; charset=utf-8
+2019-11-06 11:30:57.5676|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5001/api/customer application/json 132
+2019-11-06 11:30:57.6237|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence)'
+2019-11-06 11:30:57.6609|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Post", controller = "Customer", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(KaylaaShop.Core.Customer) on controller KaylaaShop.Pages.Api.CustomerController (MakeupResidence).
+2019-11-06 11:31:02.5159|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p11='?', @p0='?', @p1='?' (Size = 13), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (Size = 7), @p7='?' (Size = 12), @p8='?' (Size = 4), @p9='?' (Size = 10), @p10='?'], CommandType='Text', CommandTimeout='30']
+UPDATE "Customers" SET "DateSynced" = @p0, "Name" = @p1, "SyncId" = @p2, "SyncStatus" = @p3, "SyncTrackId" = @p4, "UnSyncedEvents" = @p5, "address" = @p6, "email" = @p7, "gender" = @p8, "phoneNumber" = @p9, "shopId" = @p10
+WHERE "Id" = @p11;
+SELECT changes();
+2019-11-06 11:31:07.1500|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-11-06 11:31:07.6074|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence) in 9541.947100000001ms
+2019-11-06 11:31:08.3736|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'KaylaaShop.Pages.Api.CustomerController.Post (MakeupResidence)'
+2019-11-06 11:31:08.5542|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 10938.6401ms 200 application/json; charset=utf-8

@@ -1,0 +1,268 @@
+﻿@page
+
+@model KaylaaShop.Pages.SoldProductsModel
+
+
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+@{
+    ViewData["Title"] = "Sold Products";
+    Layout = "~/Pages/Shared/_LayoutMain.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-xl-12">
+        <div id="viewAllOrder" class="kt-portlet kt-portlet--mobile">
+
+
+            <div class="kt-portlet__head kt-portlet__head--lg deepBlueBack">
+                <div class="kt-portlet__head-label">
+                    <span class="kt-portlet__head-icon">
+                        <i class="flaticon-calendar"></i>
+                    </span>
+                    <h2 class="kt-portlet__head-title kt-font-primary whiteFont">
+                        All Products Sold
+
+                    </h2>
+                   
+                    
+                   
+
+                </div>
+
+                <div class="kt-portlet__head-toolbar">
+
+                    <div class="kt-portlet__head-actions">
+                        <div class="row mt-4">
+                            <div class="form-group form-inline col-md-12">
+
+                                <select id="VatType" class="form-control  deepBlueBack whiteFont mr-1">
+                                    <option value="official"> Official</option>
+                                    <option value="non-official"> Non-Official</option>
+                                </select>
+                                <input id="vatdate" type="date" value="" class="form-control ml-1 mr-1 form-control-sm">
+                                <select id="shopId" asp-items="Model.allShops" class="form-control mr-1  deepBlueBack whiteFont">
+                                    <option value="0"> Select Shop </option>
+                                </select>
+
+                                <div class="form-check mr-2 ml-1">
+                                    <input type="checkbox" class="form-check-input" id="printPreview">
+                                    <label class="form-check-label" for="printPreview"> Enable Print Preview </label>
+                                </div>
+
+
+                                <button class="form-control btn border-light deepBlueBack whiteFont mr-1" type="button" onclick="printJS('vatSection','html')"> Print VAT </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <input id="serverUrl" type="hidden" value="@Configuration.GetSection("ServerRoot")["HostUrl"]" />
+
+            </div>
+
+            <div id="vatSection" class="kt-portlet__body">
+                <div class="row">
+                    <div id="loadingBar" style="display:none;" class="col-md-8">
+                        <span class="col-md-2"> Fetching Data  </span>
+                        <img class="col-md-5 mt-1" src="~/infinite-progress-bar.gif" alt="loading" style="height:15px;" />
+                    </div>
+                </div>
+                <h2> @Configuration.GetSection("ProjectSettings")["BusinessName"] VAT REPORT</h2>
+                <p> Date :  <span class="font-weight-bold" id="day"> - </span>  </p>
+                <p> For Month :  <span class="font-weight-bold" id="month">- </span> / <span class="font-weight-bold" id="year"> - </span> </p>
+                <p> Total VAT : <span class="font-weight-bold"> ₦</span><span class="font-weight-bold" id="totalVat">  </span>  </p>
+
+
+                <!--begin: Datatable -->
+                <table class="table" id="allSoldProductsTable">
+                    <tr>
+                    </tr>
+                </table>
+                <!--end: Datatable -->
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+@section Scripts
+{
+    <environment include="Development">
+        @*<script src="~/library/jquery/dist/jquery.min.js"></script>*@
+        <script src="~/library/datatables.net/js/jquery.dataTables.js"></script>
+        <script src="~/library/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+        <link href="~/library/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+
+    </environment>
+
+    <environment exclude="Development">
+        <script src="~/library/datatables.net/js/jquery.dataTables.js"></script>
+        <script src="~/library/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+        <link href="~/library/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+
+    </environment>
+    <link href="~/Print.css" rel="stylesheet" media="print" />
+   
+
+    <script>
+
+        var ServerRoot = $("#serverUrl").val();
+        var orderTbl = $('#allSoldProductsTable');
+
+        $(document).ready(function () {
+
+           
+            GetAllProductsSold();
+
+            
+
+            $('#shopId').on('change', getShopSoldProducts);
+
+             $('#printPreview').change(function() {
+                 if (this.checked) {
+                     $('div#allSoldProductsTable_length.dataTables_length').css("display", "none");
+                     $('div#allSoldProductsTable_info.dataTables_info').css("display", "none");
+                     $('ul.pagination').css("display", "none");
+                     $('div#allSoldProductsTable_filter.dataTables_filter').css("display", "none");
+                 }
+                 else {
+                      $('div#allSoldProductsTable_length.dataTables_length').css("display", "block");
+                     $('div#allSoldProductsTable_info.dataTables_info').css("display", "block");
+                     $('ul.pagination').css("display", "block");
+                     $('div#allSoldProductsTable_filter.dataTables_filter').css("display", "block");
+                 }
+
+             });
+          
+        });
+
+        var GetAllProductsSold = function () {
+
+            var vatType = $("#VatType").val();
+
+            $("#loadingBar").css("display", "block");
+
+            $.ajax(`${ServerRoot}api/order/getsolditem/type/${vatType}`, { method: "get" })
+                .then(function (resp) {
+
+                    console.log(resp);
+
+                    $("#allSoldProductsTable").dataTable({
+                        "scrollX": true,
+                        "data": resp,
+                        "columns": [
+
+                            //{
+                            //    "title": "Product Image", "data": "productImageUrl",
+                            //    "render": function (data) {
+                            //        return `<img src=${data} width="50" height="50" />`
+                            //    },
+
+                            //},
+                            { "title": "Date Sold", "data": "dateSold" },
+                            {
+                                "title": "Name",
+                                "data": "name",
+                                "render": function (data) {
+                                    return `<strong> ${data}  </strong>`
+                                }
+                            },
+                            { "title": "Product Code", "data": "productCode" },
+                            { "title": "Cost(₦)", "data": "costPrice" },
+                            { "title": "Amount(₦)", "data": "amountSold" },
+                            { "title": "Quantity", "data": "quantity" },
+                            { "title": "Total SP(₦)", "data": "totalSellingPrice" },
+                            { "title": "VAT(₦)", "data": "vat" }
+
+                        ]
+
+                    })
+
+                     $("#loadingBar").css("display", "none");
+                });
+
+
+
+        }
+
+
+
+
+
+        var getShopSoldProducts = function () {
+
+
+            $("#allSoldProductsTable").dataTable().fnDestroy();
+
+            var shopId = $("#shopId").val();
+
+            var vatType = $("#VatType").val();
+
+            var date = new Date($('#vatdate').val());
+
+            if (date == "Invalid Date") {
+                date = new Date();
+            }
+
+             var month = (date.getMonth() + 1);   
+                if (month < 10) 
+                    month = "0" + month;
+               
+            var year = date.getFullYear();
+
+            $("#day").html(date);
+            $("#month").html(month);
+            $("#year").html(year);
+
+              $("#loadingBar").css("display", "block");
+
+            $.ajax(`${ServerRoot}api/order/getsolditembyshop/${shopId}/type/${vatType}/date/${date.toUTCString()}`, { method: "get" })
+                .then(function (resp) {
+
+                    console.log("ordres for shop:", resp);
+
+                    const sum = resp
+                        .map(item => item.vat)
+                        .reduce((prev, curr) => prev + curr);
+
+                    $("#totalVat").html(sum);
+
+                    $("#allSoldProductsTable").dataTable({
+                        "scrollX": true,
+                        "data": resp,
+                        "columns": [
+
+                            { "title": "Date Sold", "data": "dateSold" },
+                            {
+                                "title": "Name",
+                                "data": "name",
+                                "render": function (data) {
+                                    return `<strong> ${data}  </strong>`
+                                }
+                            },
+                            { "title": "Product Code", "data": "productCode" },
+                            { "title": "Cost(₦)", "data": "costPrice" },
+                            { "title": "Amount(₦)", "data": "amountSold" },
+                            { "title": "Quantity", "data": "quantity" },
+                            { "title": "Total SP(₦)", "data": "totalSellingPrice" },
+                            { "title": "VAT(₦)", "data": "vat" }
+
+
+
+
+                        ]
+
+                    })
+                     $("#loadingBar").css("display", "none");
+                });
+        }
+    </script>
+}
